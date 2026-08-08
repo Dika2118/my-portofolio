@@ -1,0 +1,32 @@
+export const projectsData = [
+  {
+    id: 1,
+    title: "E-Commerce Platform Modern",
+    description: "Platform belanja online responsif dengan fitur keranjang real-time, penyaringan produk, dan sistem manajemen pembayaran.",
+    tags: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
+    image: "https://images.unsplash.com/photo-1557821552-17105176677c?q=80&w=800&auto=format&fit=crop",
+    demoUrl: "#",
+    githubUrl: "#",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Dashboard Analisis Finansial",
+    description: "Aplikasi web manajemen keuangan pribadi dan bisnis dengan visualisasi grafik interaktif dan laporan analytics.",
+    tags: ["React", "Recharts", "Tailwind CSS", "Express"],
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
+    demoUrl: "#",
+    githubUrl: "#",
+    featured: true,
+  },
+  {
+    id: 3,
+    title: "AI Writing & Productivity Tool",
+    description: "Alat bantu penulisan cerdas yang memanfaatkan integrasi AI untuk pembuatan konten, deskripsi produk, dan rangkuman dokumen.",
+    tags: ["React", "OpenAI API", "Tailwind CSS"],
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=800&auto=format&fit=crop",
+    demoUrl: "#",
+    githubUrl: "#",
+    featured: false,
+  },
+];
