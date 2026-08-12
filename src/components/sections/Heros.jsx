@@ -1,4 +1,6 @@
+import React from 'react';
 import { Canvas } from '@react-three/fiber';
+import { motion } from 'framer-motion';
 import InteractiveBackground from '../canvas/InteractiveBackground';
 import { PERSONAL_INFO } from '../../lib/constants';
 import { MapPin } from 'lucide-react';
@@ -18,6 +20,7 @@ export default function Heros() {
 
           <div className="absolute inset-0 pointer-events-none opacity-35 dark:opacity-40 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] [background-size:20px_20px] [mask-image:radial-gradient(ellipse_75%_75%_at_50%_40%,#000_65%,transparent_100%)]" />
 
+          {/* Profile Silhouette Image */}
           <div className="absolute inset-x-0 top-0 bottom-0 flex justify-center items-start pt-1 sm:pt-2 pointer-events-none z-10">
             <img
               src="/images/profile-back.png"
@@ -33,8 +36,10 @@ export default function Heros() {
           </div>
         </div>
 
+        {/* Profile Header Row: Avatar + Name/Role + Stats */}
         <div className="relative z-20 -mt-16 sm:-mt-24 px-2 sm:px-6 flex flex-col lg:flex-row items-center lg:items-end justify-between gap-6">
           <div className="flex flex-col sm:flex-row items-center sm:items-end gap-5 text-center sm:text-left">
+            {/* Avatar Photo Frame */}
             <div className="relative group shrink-0 ml-2 sm:ml-6">
               <div className="w-42 h-52 sm:w-52 sm:h-64 rounded-[46px] sm:rounded-[58px] overflow-hidden border-[6px] border-neutral-300 dark:border-neutral-800 shadow-2xl ring-1 ring-black/5 dark:ring-white/10 transition-transform duration-300 group-hover:scale-[1.02]">
                 <img
@@ -45,6 +50,7 @@ export default function Heros() {
               </div>
             </div>
 
+            {/* Profile Name & Role */}
             <div className="pb-1 sm:pb-3 space-y-1">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-foreground">
                 {PERSONAL_INFO.name}
@@ -59,6 +65,7 @@ export default function Heros() {
             </div>
           </div>
 
+          {/* Stats Bar */}
           <div className="pb-2 sm:pb-4 pt-4 lg:pt-0 border-t lg:border-t-0 border-border/50 w-full lg:w-auto">
             <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-10">
               {PERSONAL_INFO.stats.map((stat, idx) => (
@@ -74,6 +81,21 @@ export default function Heros() {
             </div>
           </div>
         </div>
+
+        {/* Bio Section: Animates from Left (Fade-Left) when scrolled slightly past hero */}
+        {PERSONAL_INFO.bio && (
+          <motion.div
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-30px" }}
+            transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+            className="mt-8 sm:mt-12 px-2 sm:px-6"
+          >
+            <p className="text-xs sm:text-sm md:text-base text-gray-600 dark:text-neutral-400 leading-relaxed max-w-3xl text-left">
+              {PERSONAL_INFO.bio}
+            </p>
+          </motion.div>
+        )}
       </div>
     </section>
   );

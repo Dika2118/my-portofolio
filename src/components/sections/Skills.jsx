@@ -80,8 +80,8 @@ function TagIcon({ iconKey }) {
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-background text-foreground transition-colors duration-300">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-[1400px]">
+    <section id="skills" className="py-20 bg-background text-foreground transition-colors duration-300 overflow-hidden">
+      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center space-y-4 mb-14">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white font-sans">
@@ -92,12 +92,12 @@ export default function Skills() {
           </p>
         </div>
 
-        {/* 6 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Cards Layout: Horizontal Scroll Peek on Mobile, Grid on Tablet/Desktop */}
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 -mx-4 px-4 sm:mx-0 sm:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 scrollbar-none [scroll-padding-left:1rem]">
           {skillsData.categories.map((item) => (
             <div
               key={item.id}
-              className="bg-white dark:bg-[#0e1117] rounded-2xl border border-gray-200 dark:border-[#1d2433] hover:border-gray-300 dark:hover:border-[#2b374e] transition-all duration-300 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-lg dark:shadow-none hover:-translate-y-1"
+              className="w-[84vw] max-w-[340px] sm:w-[360px] md:w-auto md:max-w-none shrink-0 snap-start md:shrink bg-white dark:bg-[#0e1117] rounded-2xl border border-gray-200 dark:border-[#1d2433] hover:border-gray-300 dark:hover:border-[#2b374e] transition-all duration-300 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-lg dark:shadow-none md:hover:-translate-y-1"
             >
               {/* Card Top: UI Window Mockup */}
               <MockupRenderer id={item.id} />

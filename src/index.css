@@ -191,4 +191,13 @@
   ::-webkit-scrollbar-thumb:hover {
     background: var(--foreground);
   }
+
+  /* Utility to hide scrollbars for horizontal carousel sliders */
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }
