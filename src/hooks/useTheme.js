@@ -19,8 +19,15 @@ export function useTheme() {
         root.classList.add('light');
         root.classList.remove('dark');
       } else {
-        root.classList.remove('dark', 'light');
-        // Let CSS @media (prefers-color-scheme: dark) handle it natively
+        // System preference
+        const isSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (isSystemDark) {
+          root.classList.add('dark');
+          root.classList.remove('light');
+        } else {
+          root.classList.add('light');
+          root.classList.remove('dark');
+        }
       }
     };
 

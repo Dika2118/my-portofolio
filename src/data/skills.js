@@ -1,29 +1,103 @@
-export const skillsCategories = [
-  {
-    category: "Frontend Development",
-    skills: [
-      { name: "React.js", level: "Lanjutan", percentage: 90 },
-      { name: "JavaScript (ES6+)", level: "Lanjutan", percentage: 92 },
-      { name: "Tailwind CSS", level: "Lanjutan", percentage: 95 },
-      { name: "HTML5 / CSS3", level: "Lanjutan", percentage: 98 },
-      { name: "TypeScript", level: "Menengah", percentage: 80 }
-    ]
-  },
-  {
-    category: "Backend & Database",
-    skills: [
-      { name: "Node.js & Express", level: "Menengah", percentage: 85 },
-      { name: "RESTful API", level: "Lanjutan", percentage: 90 },
-      { name: "MongoDB / PostgreSQL", level: "Menengah", percentage: 80 },
-      { name: "Git & GitHub", level: "Lanjutan", percentage: 92 }
-    ]
-  },
-  {
-    category: "Tools & Design",
-    skills: [
-      { name: "Figma (UI/UX)", level: "Menengah", percentage: 82 },
-      { name: "Vite / Webpack", level: "Lanjutan", percentage: 88 },
-      { name: "Responsive Web Design", level: "Lanjutan", percentage: 95 }
-    ]
-  }
-];
+export const skillsData = {
+  title: "Keahlian & Layanan",
+  subtitle: "Saya menghadirkan layanan digital dengan menggabungkan kemampuan teknis dan pemikiran kreatif untuk menciptakan solusi yang berdampak dan berkualitas tinggi.",
+  categories: [
+    {
+      id: "frontend",
+      title: "Front-End Development",
+      badge: "Expert",
+      badgeType: "expert",
+      description: "Menciptakan antarmuka pengguna yang intuitif, responsif, dan menarik menggunakan teknologi web modern.",
+      tags: [
+        { name: "HTML", icon: "html" },
+        { name: "CSS", icon: "css" },
+        { name: "JavaScript", icon: "javascript" },
+        { name: "TypeScript", icon: "typescript" },
+        { name: "Vue.js", icon: "vue" },
+        { name: "React", icon: "react" },
+        { name: "Next.js", icon: "next" },
+        { name: "+12", icon: "more" }
+      ]
+    },
+    {
+      id: "backend",
+      title: "Back-End Development",
+      badge: "Expert",
+      badgeType: "expert",
+      description: "Mengembangkan API dan arsitektur basis data yang tangguh, aman, dan skalabel.",
+      tags: [
+        { name: "JavaScript", icon: "javascript" },
+        { name: "TypeScript", icon: "typescript" },
+        { name: "PHP", icon: "php" },
+        { name: "Node.js", icon: "node" },
+        { name: "Express", icon: "express" },
+        { name: "Laravel", icon: "laravel" },
+        { name: "CodeIgniter", icon: "codeigniter" },
+        { name: "+5", icon: "more" }
+      ]
+    },
+    {
+      id: "android",
+      title: "Android Development",
+      badge: "Intermediate",
+      badgeType: "intermediate",
+      description: "Mengembangkan aplikasi Android native dengan performa tinggi dan fitur yang lengkap.",
+      tags: [
+        { name: "Kotlin", icon: "kotlin" },
+        { name: "Jetpack Compose", icon: "jetpack" },
+        { name: "Android View", icon: "android" },
+        { name: "Android SDK", icon: "sdk" },
+        { name: "Gradle", icon: "gradle" },
+        { name: "MVVM", icon: "mvvm" }
+      ]
+    },
+    {
+      id: "uiux",
+      title: "UI/UX Design",
+      badge: "Intermediate",
+      badgeType: "intermediate",
+      description: "Merancang pengalaman digital dan wireframe yang berpusat pada pengguna, mudah diakses, dan menarik secara visual.",
+      tags: [
+        { name: "Figma", icon: "figma" },
+        { name: "Adobe", icon: "adobe" },
+        { name: "Design System", icon: "designsystem" },
+        { name: "Token Studio", icon: "tokenstudio" },
+        { name: "Style Dictionary", icon: "styledictionary" },
+        { name: "Wireframing", icon: "wireframe" },
+        { name: "Prototyping", icon: "prototype" }
+      ]
+    },
+    {
+      id: "pm",
+      title: "Project Management",
+      badge: "Intermediate",
+      badgeType: "intermediate",
+      description: "Merencanakan, mengorganisir, dan mengelola sumber daya untuk mencapai tujuan proyek secara efektif serta menghasilkan dampak yang nyata.",
+      tags: [
+        { name: "Scrum", icon: "scrum" },
+        { name: "Jira", icon: "jira" },
+        { name: "Confluence", icon: "confluence" },
+        { name: "Trello", icon: "trello" },
+        { name: "Miro", icon: "miro" }
+      ]
+    },
+    {
+      id: "devops",
+      title: "DevOps & Cloud",
+      badge: "Intermediate",
+      badgeType: "intermediate",
+      description: "Mengotomatisasi pipeline deployment, mengelola infrastruktur cloud, serta memastikan sistem yang andal dan skalabel.",
+      tags: [
+        { name: "Linux", icon: "linux" },
+        { name: "Docker", icon: "docker" },
+        { name: "Google Cloud", icon: "gcp" },
+        { name: "AWS", icon: "aws" },
+        { name: "Jenkins", icon: "jenkins" },
+        { name: "Github Action", icon: "githubactions" },
+        { name: "Nginx", icon: "nginx" }
+      ]
+    }
+  ]
+};
+
+export const skillsCategories = skillsData.categories;
