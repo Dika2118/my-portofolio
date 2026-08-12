@@ -5,7 +5,7 @@ import { GithubIcon } from '../ui/icons';
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 bg-secondary/30">
+    <section id="projects" className="py-20 bg-background text-foreground transition-colors duration-300">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center space-y-4 mb-16">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Proyek Terbaru</h2>
