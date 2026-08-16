@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { NAV_LINKS } from '../../lib/constants';
-import { Download, Languages, Palette, Menu, X, Sun, Moon, Laptop } from 'lucide-react';
+import { Download, Palette, Menu, X, Sun, Moon, Laptop } from 'lucide-react';
 import { useTheme } from '../../hooks/useTheme';
+import { useLanguage } from '../../i18n';
 
 function Logo() {
   return (
@@ -20,13 +20,45 @@ function Logo() {
   );
 }
 
+function FlagEN({ className = 'w-5 h-5' }) {
+  return (
+    <svg viewBox="0 0 60 60" className={`rounded-full shadow-xs border border-border/40 shrink-0 ${className}`}>
+      <clipPath id="circle-uk">
+        <circle cx="30" cy="30" r="30" />
+      </clipPath>
+      <g clipPath="url(#circle-uk)">
+        <rect width="60" height="60" fill="#012169" />
+        <path d="M0 0 L60 60 M60 0 L0 60" stroke="#ffffff" strokeWidth="9" />
+        <path d="M0 0 L60 60 M60 0 L0 60" stroke="#C8102E" strokeWidth="5" />
+        <path d="M30 0 V60 M0 30 H60" stroke="#ffffff" strokeWidth="13" />
+        <path d="M30 0 V60 M0 30 H60" stroke="#C8102E" strokeWidth="7.5" />
+      </g>
+    </svg>
+  );
+}
+
+function FlagID({ className = 'w-5 h-5' }) {
+  return (
+    <svg viewBox="0 0 60 60" className={`rounded-full shadow-xs border border-border/40 shrink-0 ${className}`}>
+      <clipPath id="circle-id">
+        <circle cx="30" cy="30" r="30" />
+      </clipPath>
+      <g clipPath="url(#circle-id)">
+        <rect width="60" height="30" fill="#E70011" />
+        <rect y="30" width="60" height="30" fill="#F4F4F5" />
+      </g>
+    </svg>
+  );
+}
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeNav, setActiveNav] = useState('#hero');
   const [theme, setTheme] = useTheme();
   const [themeDropdownOpen, setThemeDropdownOpen] = useState(false);
-  const [lang, setLang] = useState('ID');
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
+  const { language, changeLanguage, t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,10 +68,26 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const languageOptions = [
+    { code: 'en', label: 'Inggris', flag: FlagEN },
+    { code: 'id', label: 'Indonesia', flag: FlagID },
+  ];
+
   const themeOptions = [
     { value: 'light', label: 'Cerah', icon: Sun },
     { value: 'dark', label: 'Gelap', icon: Moon },
     { value: 'system', label: 'Sistem', icon: Laptop },
+  ];
+
+  const navLinks = [
+    { name: t('nav.home'), href: '#hero' },
+    { name: t('nav.skills'), href: '#skills' },
+    { name: t('nav.projects'), href: '#projects' },
+    { name: t('nav.experiences'), href: '#experiences' },
+    { name: t('nav.education'), href: '#educations' },
+    { name: t('nav.achievements'), href: '#achievements' },
+    { name: t('nav.testimonials'), href: '#testimonials' },
+    { name: t('nav.contact'), href: '#contact' },
   ];
 
   return (
@@ -70,7 +118,7 @@ export default function Navbar() {
             <Logo />
 
             <nav className="flex items-center gap-6">
-              {NAV_LINKS.map((link) => {
+              {navLinks.map((link) => {
                 const isActive = activeNav === link.href;
                 return (
                   <a
@@ -97,18 +145,59 @@ export default function Navbar() {
               href="#resume"
               className="hidden md:flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white text-black font-semibold text-xs hover:bg-gray-100 transition-all shadow-sm"
             >
-              <span>Unduh Resume</span>
+              <span>{t('nav.downloadResume')}</span>
               <Download className="w-3.5 h-3.5" />
             </a>
 
-            {/* Language Switcher */}
-            <button
-              onClick={() => setLang(lang === 'ID' ? 'EN' : 'ID')}
-              className="p-2 rounded-full text-foreground hover:bg-accent transition-all"
-              title="Ganti Bahasa"
-            >
-              <Languages className="w-5 h-5" />
-            </button>
+            {/* Language Switcher Dropdown */}
+            <div className="relative">
+              <button
+                onClick={() => {
+                  setLangDropdownOpen(!langDropdownOpen);
+                  setThemeDropdownOpen(false);
+                }}
+                className="p-2 rounded-full text-foreground hover:bg-accent transition-all flex items-center justify-center"
+                title={t('common.switchLanguage')}
+              >
+                {language === 'en' ? (
+                  <FlagEN className="w-5 h-5" />
+                ) : (
+                  <FlagID className="w-5 h-5" />
+                )}
+              </button>
+
+              {langDropdownOpen && (
+                <>
+                  <div
+                    className="fixed inset-0 z-40"
+                    onClick={() => setLangDropdownOpen(false)}
+                  />
+                  <div className="absolute right-0 mt-2 w-40 p-1.5 bg-card border border-border rounded-2xl shadow-xl z-50 animate-in fade-in zoom-in-95 duration-150 space-y-1">
+                    {languageOptions.map((option) => {
+                      const FlagIcon = option.flag;
+                      const isActive = language === option.code;
+                      return (
+                        <button
+                          key={option.code}
+                          onClick={() => {
+                            changeLanguage(option.code);
+                            setLangDropdownOpen(false);
+                          }}
+                          className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all ${
+                            isActive
+                              ? 'bg-accent/80 text-foreground font-bold shadow-xs'
+                              : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                          }`}
+                        >
+                          <FlagIcon className="w-5 h-5" />
+                          <span>{option.label}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </>
+              )}
+            </div>
 
             {/* Theme Palette Switcher */}
             <div className="relative">
@@ -169,7 +258,7 @@ export default function Navbar() {
           <aside className="fixed top-14 left-0 bottom-0 z-50 w-72 sm:w-80 bg-background border-r border-border p-4 flex flex-col justify-between md:hidden shadow-2xl animate-in slide-in-from-left duration-200">
             {/* Nav Links */}
             <div className="space-y-1.5 pt-2">
-              {NAV_LINKS.map((link) => {
+              {navLinks.map((link) => {
                 const isActive = activeNav === link.href;
                 return (
                   <a
@@ -198,7 +287,7 @@ export default function Navbar() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-white text-black font-bold text-sm hover:bg-neutral-200 transition-all shadow-md"
               >
-                <span>Unduh Resume</span>
+                <span>{t('nav.downloadResume')}</span>
                 <Download className="w-4 h-4" />
               </a>
             </div>

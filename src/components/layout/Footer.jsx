@@ -1,16 +1,19 @@
 import React from 'react';
 import { PERSONAL_INFO } from '../../lib/constants';
-import { Mail, Heart } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { GithubIcon, LinkedinIcon } from '../ui/icons';
+import { useLanguage } from '../../i18n';
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="border-t border-border bg-card py-12">
       <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
         <div>
           <h3 className="font-bold text-lg">{PERSONAL_INFO.name}</h3>
           <p className="text-muted-foreground text-sm mt-1">
-            © {new Date().getFullYear()} {PERSONAL_INFO.name}. All rights reserved.
+            © {new Date().getFullYear()} {PERSONAL_INFO.name}. {t('footer.rights')}
           </p>
         </div>
 

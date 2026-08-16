@@ -1,44 +1,31 @@
 import React from 'react';
 import { Trophy, Star, Medal, Sparkles } from 'lucide-react';
+import { useLanguage } from '../../i18n';
 
-const achievementsList = [
-  {
-    id: 1,
-    title: "Juara 1 Hackathon Web App National 2023",
-    issuer: "Kementerian Komunikasi dan Informatika",
-    year: "2023",
-    description: "Mengembangkan prototype solusi manajemen bencana real-time berbasis AI dan React.",
-    icon: Trophy
-  },
-  {
-    id: 2,
-    title: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services (AWS)",
-    year: "2022",
-    description: "Sertifikasi resmi untuk merancang arsitektur cloud terdistribusi, hemat biaya, dan aman.",
-    icon: Star
-  },
-  {
-    id: 3,
-    title: "Best Contributor of the Year",
-    issuer: "Tech Solutions Indonesia",
-    year: "2023",
-    description: "Penghargaan internal atas dedikasi memodernisasi stack frontend utama perusahaan.",
-    icon: Medal
-  }
-];
+const achievementsIcons = [Trophy, Star, Medal];
 
 export default function Achievements() {
+  const { t } = useLanguage();
+
+  const achievementsList = [0, 1, 2].map((idx) => ({
+    id: idx + 1,
+    title: t(`achievements.items.${idx}.title`),
+    issuer: t(`achievements.items.${idx}.issuer`),
+    year: t(`achievements.items.${idx}.year`),
+    description: t(`achievements.items.${idx}.description`),
+    icon: achievementsIcons[idx] || Trophy,
+  }));
+
   return (
     <section id="achievements" className="py-20 bg-background text-foreground transition-colors duration-300">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-semibold">
-            <Sparkles className="w-3.5 h-3.5" /> Penghargaan
+            <Sparkles className="w-3.5 h-3.5" /> {t('achievements.badge')}
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Prestasi & Pencapaian</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">{t('achievements.title')}</h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Pengakuan resmi atas hasil kerja, kompetisi, dan kontribusi dalam dunia pemrograman.
+            {t('achievements.subtitle')}
           </p>
         </div>
 

@@ -4,8 +4,19 @@ import { motion } from 'framer-motion';
 import InteractiveBackground from '../canvas/InteractiveBackground';
 import { PERSONAL_INFO } from '../../lib/constants';
 import { MapPin } from 'lucide-react';
+import { useLanguage } from '../../i18n';
 
 export default function Heros() {
+  const { t } = useLanguage();
+
+  const stats = [
+    { label: t('hero.stats.experience'), value: "4+" },
+    { label: t('hero.stats.services'), value: "6" },
+    { label: t('hero.stats.projects'), value: "7" },
+    { label: t('hero.stats.achievements'), value: "15" },
+    { label: t('hero.stats.articles'), value: "1" },
+  ];
+
   return (
     <section id="hero" className="pt-24 sm:pt-28 pb-16 min-h-screen flex flex-col justify-center bg-background text-foreground relative overflow-hidden transition-colors duration-300">
       <div className="container mx-auto px-4 max-w-340 relative z-10">
@@ -31,7 +42,7 @@ export default function Heros() {
 
           <div className="relative z-20 w-full text-center pb-6 sm:pb-10 pointer-events-none select-none">
             <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 via-neutral-200/50 to-neutral-950/80 drop-shadow-md">
-              Think.Design.Develop
+              {t('hero.tagline')}
             </h2>
           </div>
         </div>
@@ -56,11 +67,11 @@ export default function Heros() {
                 {PERSONAL_INFO.name}
               </h1>
               <p className="text-lg sm:text-xl font-bold text-primary">
-                {PERSONAL_INFO.role}
+                {t('hero.role')}
               </p>
               <div className="flex items-center justify-center sm:justify-start gap-1.5 text-xs sm:text-sm font-medium text-muted-foreground pt-0.5">
                 <MapPin className="w-3.5 h-3.5 text-muted-foreground" />
-                <span>{PERSONAL_INFO.location}</span>
+                <span>{t('hero.location')}</span>
               </div>
             </div>
           </div>
@@ -68,7 +79,7 @@ export default function Heros() {
           {/* Stats Bar */}
           <div className="pb-2 sm:pb-4 pt-4 lg:pt-0 border-t lg:border-t-0 border-border/50 w-full lg:w-auto">
             <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-10">
-              {PERSONAL_INFO.stats.map((stat, idx) => (
+              {stats.map((stat, idx) => (
                 <div key={idx} className="flex flex-col items-center text-center">
                   <span className="text-xs sm:text-sm font-medium text-muted-foreground">
                     {stat.label}
@@ -82,20 +93,18 @@ export default function Heros() {
           </div>
         </div>
 
-        {/* Bio Section: Animates from Left (Fade-Left) when scrolled slightly past hero */}
-        {PERSONAL_INFO.bio && (
-          <motion.div
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-30px" }}
-            transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
-            className="mt-8 sm:mt-12 px-2 sm:px-6"
-          >
-            <p className="text-xs sm:text-sm md:text-base text-gray-600 dark:text-neutral-400 leading-relaxed max-w-3xl text-left">
-              {PERSONAL_INFO.bio}
-            </p>
-          </motion.div>
-        )}
+        {/* Bio Section */}
+        <motion.div
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.7, ease: [0.215, 0.61, 0.355, 1] }}
+          className="mt-8 sm:mt-12 px-2 sm:px-6"
+        >
+          <p className="text-xs sm:text-sm md:text-base text-gray-600 dark:text-neutral-400 leading-relaxed max-w-3xl text-left">
+            {t('hero.bio')}
+          </p>
+        </motion.div>
       </div>
     </section>
   );
