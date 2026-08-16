@@ -1,0 +1,32 @@
+{
+  "title": "Skills & Services",
+  "subtitle": "I deliver digital services by combining technical capability and creative thinking to build impactful and high-quality solutions.",
+  "badgeExpert": "Expert",
+  "badgeIntermediate": "Intermediate",
+  "categories": {
+    "frontend": {
+      "title": "Front-End Development",
+      "description": "Creating intuitive, responsive, and engaging user interfaces using modern web technologies."
+    },
+    "backend": {
+      "title": "Back-End Development",
+      "description": "Developing robust, secure, and scalable APIs and database architectures."
+    },
+    "android": {
+      "title": "Android Development",
+      "description": "Building native Android applications with high performance and comprehensive features."
+    },
+    "uiux": {
+      "title": "UI/UX Design",
+      "description": "Designing user-centered, accessible, and visually appealing digital experiences and wireframes."
+    },
+    "pm": {
+      "title": "Project Management",
+      "description": "Planning, organizing, and managing resources to achieve project goals effectively and deliver tangible impact."
+    },
+    "devops": {
+      "title": "DevOps & Cloud",
+      "description": "Automating deployment pipelines, managing cloud infrastructure, and ensuring reliable and scalable systems."
+    }
+  }
+}

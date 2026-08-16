@@ -1,0 +1,24 @@
+{
+  "title": "Latest Projects",
+  "subtitle": "Some of my best work focused on UX, performance, and scale.",
+  "featured": "Featured",
+  "liveDemo": "Live Demo",
+  "code": "Code",
+  "items": [
+    {
+      "id": 1,
+      "title": "Modern E-Commerce Platform",
+      "description": "Responsive online shopping platform featuring real-time cart, product filtering, and payment management system."
+    },
+    {
+      "id": 2,
+      "title": "Financial Analytics Dashboard",
+      "description": "Personal & business finance web app with interactive charts and analytics reporting."
+    },
+    {
+      "id": 3,
+      "title": "AI Writing & Productivity Tool",
+      "description": "Smart writing tool leveraging AI integrations for content creation, product descriptions, and document summaries."
+    }
+  ]
+}

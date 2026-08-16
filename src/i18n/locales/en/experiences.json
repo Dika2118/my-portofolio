@@ -1,0 +1,30 @@
+{
+  "title": "Work Experience",
+  "subtitle": "My professional career journey and contributions in the technology industry.",
+  "items": [
+    {
+      "id": 1,
+      "role": "Senior Frontend Developer",
+      "company": "Tech Solutions Indonesia",
+      "period": "2023 - Present",
+      "description": "Leading the frontend team in designing and maintaining large-scale web applications, boosting page performance by up to 40%.",
+      "responsibilities": [
+        "Developing React & Tailwind CSS-based UI architecture",
+        "Mentoring junior developers and conducting regular code reviews",
+        "Optimizing web performance and accessibility (SEO & Lighthouse)"
+      ]
+    },
+    {
+      "id": 2,
+      "role": "Full Stack Web Developer",
+      "company": "Digital Studio Creative",
+      "period": "2021 - 2023",
+      "description": "Building custom web solutions for clients across various business industries.",
+      "responsibilities": [
+        "Developing RESTful APIs using Node.js and Express",
+        "Integrating React interfaces with MongoDB backend databases",
+        "Collaborating directly with UI/UX designers"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Testimonials & Endorsements",
+  "subtitle": "What colleagues, managers, and clients say about working together.",
+  "items": [
+    {
+      "id": 1,
+      "name": "Budi Santoso",
+      "role": "CEO & Founder",
+      "company": "Tech Start",
+      "content": "Project execution was super fast, neat, and matched specifications perfectly. Communication was smooth and full of helpful ideas!"
+    },
+    {
+      "id": 2,
+      "name": "Siti Rahma",
+      "role": "Product Manager",
+      "company": "Creative Digital Studio",
+      "content": "Absolute pleasure working with Dika. Code quality is exceptionally clean, maintainable, and the UI looks stunning."
+    }
+  ]
+}

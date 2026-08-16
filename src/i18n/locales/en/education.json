@@ -1,0 +1,25 @@
+{
+  "title": "Education & Certifications",
+  "subtitle": "Academic background and formal training shaping my knowledge foundation.",
+  "achievementsHeading": "Achievements",
+  "items": [
+    {
+      "id": 1,
+      "degree": "Bachelor of Computer Science (S.Kom) - Informatics",
+      "institution": "University of Indonesia",
+      "period": "2017 - 2021",
+      "description": "Graduated with Cum Laude honors. Focused on Software Engineering and Web Development.",
+      "achievements": [
+        "GPA: 3.85 / 4.00",
+        "1st Place National Web App Competition (2020)"
+      ]
+    },
+    {
+      "id": 2,
+      "degree": "Intensive Full Stack Web Development",
+      "institution": "Hacktiv8 Bootcamp",
+      "period": "2021",
+      "description": "Intensive 16-week program covering modern JavaScript ecosystem, React, Node.js, and cloud deployment."
+    }
+  ]
+}

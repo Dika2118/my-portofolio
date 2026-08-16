@@ -1,0 +1,13 @@
+{
+  "tagline": "Think.Design.Develop",
+  "role": "Web Developer",
+  "location": "Bali, Indonesia",
+  "bio": "UX Engineer with 4+ years of experience in front-end engineering and design systems. Focused on building scalable UI libraries and translating UI/UX designs into high-quality code.",
+  "stats": {
+    "experience": "Years Exp.",
+    "services": "Services",
+    "projects": "Projects",
+    "achievements": "Achievements",
+    "articles": "Articles"
+  }
+}

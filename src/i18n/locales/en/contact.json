@@ -1,0 +1,18 @@
+{
+  "title": "Contact Me",
+  "subtitle": "Have a project idea, job offer, or just want to chat? Feel free to reach out!",
+  "infoTitle": "Contact Information",
+  "infoDesc": "I am always open to discussing new opportunities, exciting projects, and innovative ideas.",
+  "email": "Email",
+  "phone": "Phone / WhatsApp",
+  "location": "Location",
+  "fullName": "Full Name",
+  "fullNamePlaceholder": "Your Name",
+  "emailAddress": "Email Address",
+  "emailPlaceholder": "email@domain.com",
+  "message": "Message",
+  "messagePlaceholder": "Write your message here...",
+  "sendButton": "Send Message",
+  "successTitle": "Message Sent!",
+  "successDesc": "Thank you for reaching out. I will reply to your message as soon as possible."
+}
