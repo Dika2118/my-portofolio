@@ -1,0 +1,20 @@
+{
+  "title": "Testimoni & Rekomendasi",
+  "subtitle": "Apa yang dikatakan oleh rekan kerja, atasan, dan klien mengenai hasil kolaborasi kami.",
+  "items": [
+    {
+      "id": 1,
+      "name": "Budi Santoso",
+      "role": "CEO & Founder",
+      "company": "Tech Start",
+      "content": "Pengerjaan proyek sangat cepat, rapi, dan sesuai dengan spesifikasi. Komunikasi sangat lancar dan memberikan ide-ide solutif!"
+    },
+    {
+      "id": 2,
+      "name": "Siti Rahma",
+      "role": "Product Manager",
+      "company": "Creative Digital Studio",
+      "content": "Sangat senang bekerja sama dengan Dika. Hasil kodenya sangat bersih, mudah dipelihara, dan tampilan UI sangat estetik."
+    }
+  ]
+}

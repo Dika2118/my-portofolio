@@ -1,0 +1,24 @@
+{
+  "title": "Proyek Terbaru",
+  "subtitle": "Beberapa karya terbaik yang telah saya selesaikan dengan fokus pada UX, kecepatan, dan skala.",
+  "featured": "Unggulan",
+  "liveDemo": "Live Demo",
+  "code": "Kode",
+  "items": [
+    {
+      "id": 1,
+      "title": "Platform E-Commerce Modern",
+      "description": "Platform belanja online responsif dengan fitur keranjang real-time, penyaringan produk, dan sistem manajemen pembayaran."
+    },
+    {
+      "id": 2,
+      "title": "Dashboard Analisis Finansial",
+      "description": "Aplikasi web manajemen keuangan pribadi dan bisnis dengan visualisasi grafik interaktif dan laporan analytics."
+    },
+    {
+      "id": 3,
+      "title": "AI Writing & Productivity Tool",
+      "description": "Alat bantu penulisan cerdas yang memanfaatkan integrasi AI untuk pembuatan konten, deskripsi produk, dan rangkuman dokumen."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Keahlian & Layanan",
+  "subtitle": "Saya menghadirkan layanan digital dengan menggabungkan kemampuan teknis dan pemikiran kreatif untuk menciptakan solusi yang berdampak dan berkualitas tinggi.",
+  "badgeExpert": "Expert",
+  "badgeIntermediate": "Intermediate",
+  "categories": {
+    "frontend": {
+      "title": "Front-End Development",
+      "description": "Menciptakan antarmuka pengguna yang intuitif, responsif, dan menarik menggunakan teknologi web modern."
+    },
+    "backend": {
+      "title": "Back-End Development",
+      "description": "Mengembangkan API dan arsitektur basis data yang tangguh, aman, dan skalabel."
+    },
+    "android": {
+      "title": "Android Development",
+      "description": "Mengembangkan aplikasi Android native dengan performa tinggi dan fitur yang lengkap."
+    },
+    "uiux": {
+      "title": "UI/UX Design",
+      "description": "Merancang pengalaman digital dan wireframe yang berpusat pada pengguna, mudah diakses, dan menarik secara visual."
+    },
+    "pm": {
+      "title": "Project Management",
+      "description": "Merencanakan, mengorganisir, dan mengelola sumber daya untuk mencapai tujuan proyek secara efektif serta menghasilkan dampak yang nyata."
+    },
+    "devops": {
+      "title": "DevOps & Cloud",
+      "description": "Mengotomatisasi pipeline deployment, mengelola infrastruktur cloud, serta memastikan sistem yang andal dan skalabel."
+    }
+  }
+}

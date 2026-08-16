@@ -1,0 +1,18 @@
+{
+  "title": "Hubungi Saya",
+  "subtitle": "Punya ide proyek, penawaran kerja, atau sekadar ingin berdiskusi? Jangan ragu untuk menghubungi saya!",
+  "infoTitle": "Informasi Kontak",
+  "infoDesc": "Saya selalu terbuka untuk berdiskusi tentang peluang baru, proyek menarik, dan ide-ide inovatif.",
+  "email": "Email",
+  "phone": "Telepon / WhatsApp",
+  "location": "Lokasi",
+  "fullName": "Nama Lengkap",
+  "fullNamePlaceholder": "Nama Anda",
+  "emailAddress": "Alamat Email",
+  "emailPlaceholder": "email@domain.com",
+  "message": "Pesan",
+  "messagePlaceholder": "Tuliskan pesan Anda di sini...",
+  "sendButton": "Kirim Pesan",
+  "successTitle": "Pesan Terkirim!",
+  "successDesc": "Terima kasih telah menghubungi saya. Saya akan membalas pesan Anda sesegera mungkin."
+}
