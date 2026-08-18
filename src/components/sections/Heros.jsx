@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { motion } from 'framer-motion';
 import InteractiveBackground from '../canvas/InteractiveBackground';
@@ -8,6 +8,7 @@ import { useLanguage } from '../../i18n';
 
 export default function Heros() {
   const { t } = useLanguage();
+  const [isBannerHovered, setIsBannerHovered] = useState(false);
 
   const stats = [
     { label: t('hero.stats.experience'), value: "4+" },
@@ -21,11 +22,15 @@ export default function Heros() {
     <section id="hero" className="pt-24 sm:pt-28 pb-16 min-h-screen flex flex-col justify-center bg-background text-foreground relative overflow-hidden transition-colors duration-300">
       <div className="container mx-auto px-4 max-w-340 relative z-10">
 
-        <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-950 border border-border shadow-2xl flex flex-col justify-end items-center min-h-75 sm:min-h-105 md:min-h-100 group/banner">
+        <div
+          onMouseEnter={() => setIsBannerHovered(true)}
+          onMouseLeave={() => setIsBannerHovered(false)}
+          className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-950 border border-border shadow-2xl flex flex-col justify-end items-center min-h-75 sm:min-h-105 md:min-h-100 group/banner"
+        >
           {/* 3D Interactive Light Canvas Background */}
           <div className="absolute inset-0 pointer-events-none z-0">
             <Canvas camera={{ position: [0, 0, 5], fov: 60 }} style={{ background: 'transparent' }}>
-              <InteractiveBackground />
+              <InteractiveBackground isHovered={isBannerHovered} />
             </Canvas>
           </div>
 

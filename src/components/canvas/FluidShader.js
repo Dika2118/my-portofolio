@@ -43,17 +43,17 @@ export const FluidShader = {
       float windStrength = smoothstep(0.18, 0.0, windLine);
 
       // Batasi pancaran angin agar berpusat menyempit di sekitar koordinat X mouse
-      float xConstraint = smoothstep(0.4, 0.0, distance(uv.x, uMouse.x));
+      float xConstraint = smoothstep(0.45, 0.0, distance(uv.x, uMouse.x));
       
       // Campuran warna gradasi biru kelasi ke indigo
-      vec3 colorA = vec3(0.0, 0.4, 0.9);
-      vec3 colorB = vec3(0.3, 0.0, 0.8);
+      vec3 colorA = vec3(0.0, 0.45, 0.95);
+      vec3 colorB = vec3(0.3, 0.1, 0.85);
       vec3 finalColor = mix(colorA, colorB, noisePattern * 0.5 + 0.5);
 
       // Hitung akumulasi kekuatan transparansi akhir dikalikan pengontrol Opacity global
-      float finalAlpha = windStrength * xConstraint * 0.5 * uOpacity;
+      float finalAlpha = windStrength * xConstraint * 0.7 * uOpacity;
 
-      gl_FragColor = vec4(finalColor * finalAlpha, 1.0);
+      gl_FragColor = vec4(finalColor, finalAlpha);
     }
   `
 };
