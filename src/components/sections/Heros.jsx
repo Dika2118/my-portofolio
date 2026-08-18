@@ -89,7 +89,7 @@ export default function Heros() {
                   <span className="text-xs sm:text-sm font-medium text-muted-foreground">
                     {stat.label}
                   </span>
-                  <span className="text-2xl sm:text-3xl font-black tracking-tight text-foreground mt-0.5">
+                  <span className="text-2xl sm:text-3xl font-extrabold tracking-tight text-foreground mt-0.5">
                     {stat.value}
                   </span>
                 </div>
