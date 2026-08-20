@@ -12,10 +12,7 @@
       "title": "Back-End Development",
       "description": "Developing robust, secure, and scalable APIs and database architectures."
     },
-    "android": {
-      "title": "Android Development",
-      "description": "Building native Android applications with high performance and comprehensive features."
-    },
+
     "uiux": {
       "title": "UI/UX Design",
       "description": "Designing user-centered, accessible, and visually appealing digital experiences and wireframes."

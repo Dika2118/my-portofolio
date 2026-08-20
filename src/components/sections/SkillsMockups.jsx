@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 export function FrontendMockup() {
   return (
-    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden group transition-colors duration-300 select-none">
+    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden transition-colors duration-300 select-none">
       {/* Background Radial Dot Grid */}
       <div className="absolute inset-0 bg-[radial-gradient(#80808025_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:14px_14px] pointer-events-none" />
 
       {/* Floating Centered Window Mockup */}
-      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative transition-transform duration-300 group-hover:scale-[1.02] shrink-0">
+      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative shrink-0">
         {/* Fixed Title Bar */}
         <div className="bg-gray-100/90 dark:bg-[#181c26] border-b border-gray-200 dark:border-[#1f2633] px-2.5 py-1.5 flex items-center gap-1.5 shrink-0 z-30">
           <span className="w-2 h-2 rounded-full bg-[#ff5f56]" />
@@ -213,12 +213,12 @@ export function FrontendMockup() {
 
 export function BackendMockup() {
   return (
-    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden group transition-colors duration-300 select-none">
+    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden transition-colors duration-300 select-none">
       {/* Background Radial Dot Grid */}
       <div className="absolute inset-0 bg-[radial-gradient(#80808025_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:14px_14px] pointer-events-none" />
 
       {/* Floating Centered Window Mockup */}
-      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative transition-transform duration-300 group-hover:scale-[1.02] shrink-0">
+      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative shrink-0">
         {/* Title Bar */}
         <div className="bg-gray-100/90 dark:bg-[#181c26] border-b border-gray-200 dark:border-[#1f2633] px-2.5 py-1.5 flex items-center gap-1.5 shrink-0 z-30">
           <span className="w-2 h-2 rounded-full bg-[#ff5f56]" />
@@ -341,10 +341,10 @@ export function BackendMockup() {
 
 export function AndroidMockup() {
   return (
-    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden group transition-colors duration-300 select-none">
+    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden transition-colors duration-300 select-none">
       <div className="absolute inset-0 bg-[radial-gradient(#80808025_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:14px_14px] pointer-events-none" />
 
-      <div className="w-[125px] sm:w-[135px] h-[160px] sm:h-[175px] bg-white dark:bg-[#12151c] rounded-2xl border-2 border-gray-300 dark:border-[#2b3447] p-1.5 flex flex-col justify-between shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] relative transition-transform duration-300 group-hover:scale-[1.03] shrink-0">
+      <div className="w-[125px] sm:w-[135px] h-[160px] sm:h-[175px] bg-white dark:bg-[#12151c] rounded-2xl border-2 border-gray-300 dark:border-[#2b3447] p-1.5 flex flex-col justify-between shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] relative shrink-0">
         {/* Phone Speaker Notch */}
         <div className="w-7 h-1 bg-gray-300 dark:bg-[#2b3447] rounded-full mx-auto mb-1" />
 
@@ -381,44 +381,164 @@ export function AndroidMockup() {
 
 export function UiUxMockup() {
   return (
-    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden group transition-colors duration-300 select-none">
+    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden transition-colors duration-300 select-none">
+      {/* Background Radial Dot Grid */}
       <div className="absolute inset-0 bg-[radial-gradient(#80808025_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:14px_14px] pointer-events-none" />
 
-      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative transition-transform duration-300 group-hover:scale-[1.02] shrink-0 p-2 justify-between">
-        <div className="flex items-center gap-1.5 mb-1">
+      {/* Floating Centered Window Mockup */}
+      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative shrink-0">
+        {/* Title Bar */}
+        <div className="bg-gray-100/90 dark:bg-[#181c26] border-b border-gray-200 dark:border-[#1f2633] px-2.5 py-1.5 flex items-center gap-1.5 shrink-0 z-30">
           <span className="w-2 h-2 rounded-full bg-[#ff5f56]" />
           <span className="w-2 h-2 rounded-full bg-[#ffbd2e]" />
           <span className="w-2 h-2 rounded-full bg-[#27c93f]" />
+          <div className="ml-1.5 h-1.5 flex-1 rounded-full bg-gray-200 dark:bg-[#252d3d]" />
         </div>
 
-        <div className="flex-1 bg-white dark:bg-[#12151c] rounded-lg border border-gray-200 dark:border-[#1f2633] p-1.5 flex gap-1.5 overflow-hidden shadow-xs">
-          <div className="w-5 bg-gray-100 dark:bg-[#181c26] rounded flex flex-col items-center py-1.5 gap-1.5 border border-gray-200 dark:border-[#232a38]">
-            <div className="w-2 h-2 rounded-xs bg-[#3b82f6]" />
-            <div className="w-2 h-2 rounded-xs bg-gray-300 dark:bg-[#475569]" />
-            <div className="w-2 h-2 rounded-xs bg-gray-300 dark:bg-[#475569]" />
-            <div className="w-2 h-2 rounded-xs bg-gray-300 dark:bg-[#475569]" />
+        {/* Workspace Canvas Area */}
+        <div className="flex-1 overflow-hidden relative bg-white dark:bg-[#12151c] flex">
+          {/* Canvas Background Dashed Grid */}
+          <div className="absolute inset-0 z-0 grid grid-cols-4 gap-1 p-2 pointer-events-none opacity-40 dark:opacity-30">
+            {Array.from({ length: 12 }).map((_, i) => (
+              <div key={i} className="border border-dashed border-gray-300 dark:border-[#283448] rounded-xs" />
+            ))}
           </div>
 
-          <div className="flex-1 bg-gray-50 dark:bg-[#0a0c10] rounded border border-gray-200 dark:border-[#1e2533] p-2 relative flex items-center justify-center overflow-hidden">
-            <div className="absolute inset-0 opacity-20 dark:opacity-10 bg-[radial-gradient(#888888_1px,transparent_1px)] [background-size:8px_8px]" />
-
-            <div className="w-20 h-14 border-2 border-[#3b82f6] rounded bg-[#3b82f6]/10 dark:bg-[#182238]/60 relative flex flex-col justify-center items-center p-1">
-              <span className="w-1.5 h-1.5 bg-[#3b82f6] border border-white absolute -top-1 -left-1" />
-              <span className="w-1.5 h-1.5 bg-[#3b82f6] border border-white absolute -top-1 -right-1" />
-              <span className="w-1.5 h-1.5 bg-[#3b82f6] border border-white absolute -bottom-1 -left-1" />
-              <span className="w-1.5 h-1.5 bg-[#3b82f6] border border-white absolute -bottom-1 -right-1" />
-
-              <div className="h-1.5 w-10 bg-gray-300 dark:bg-[#2d3a54] rounded mb-1" />
-              <div className="h-2.5 w-8 bg-[#3b82f6] rounded text-[7px] text-white flex items-center justify-center font-mono font-bold">
-                BUTTON
+          <div className="relative z-10 flex flex-1 overflow-hidden">
+            {/* Left Toolbar & Layer Sidebar */}
+            <div className="w-14 sm:w-16 border-r border-gray-200 dark:border-[#1f2633] bg-gray-50/90 dark:bg-[#161a23]/90 backdrop-blur-xs flex z-10 shrink-0">
+              {/* Leftmost Tool Strip */}
+              <div className="w-4.5 border-r border-gray-200 dark:border-[#1f2633] flex flex-col items-center py-1.5 gap-1 shrink-0">
+                <div className="w-2 h-2 rounded-xs bg-blue-500" />
+                <div className="w-2 h-0.5 bg-gray-300 dark:bg-[#2c374a] my-0.5" />
+                <div className="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-[#34425a]" />
+                <div className="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-[#34425a]" />
+                <div className="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-[#34425a]" />
+                <div className="w-1.5 h-1.5 rounded-full bg-gray-300 dark:bg-[#34425a]" />
+              </div>
+              {/* Layers List */}
+              <div className="flex-1 flex flex-col gap-1 p-1">
+                <div className="border-b border-gray-200 dark:border-[#1f2633] pb-1 flex flex-col gap-0.5">
+                  <div className="h-1 w-full rounded bg-gray-400 dark:bg-[#404e68]" />
+                  <div className="h-0.5 w-3/4 rounded bg-gray-300 dark:bg-[#2b3547]" />
+                </div>
+                <div className="flex flex-col gap-1">
+                  <div className="h-0.5 w-3/4 rounded bg-gray-400 dark:bg-[#404e68]" />
+                  <div className="h-0.5 w-full rounded bg-gray-300 dark:bg-[#2b3547]" />
+                  <div className="h-0.5 w-full rounded bg-gray-300 dark:bg-[#2b3547]" />
+                  <div className="h-0.5 w-full rounded bg-gray-300 dark:bg-[#2b3547]" />
+                  <div className="h-0.5 w-full rounded bg-gray-300 dark:bg-[#2b3547]" />
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className="w-10 bg-gray-100 dark:bg-[#181c26] rounded flex flex-col p-1 gap-1 border border-gray-200 dark:border-[#232a38]">
-            <div className="h-1.5 w-full bg-gray-200 dark:bg-[#2a3447] rounded" />
-            <div className="h-1.5 w-full bg-gray-200 dark:bg-[#2a3447] rounded" />
-            <div className="h-1.5 w-full bg-[#3b82f6]/50 rounded" />
+            {/* Center Canvas: Active Selection Component */}
+            <div className="flex-1 flex items-center justify-center p-2 relative z-10">
+              <motion.div
+                animate={{
+                  scale: [0.92, 1.06, 0.92]
+                }}
+                transition={{
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: 'easeInOut'
+                }}
+                className="w-16 sm:w-18 h-16 border border-blue-500 bg-white dark:bg-[#12151c] relative flex flex-col gap-1 p-1 shadow-sm rounded-xs shrink-0"
+              >
+                {/* 4 Corner Blue Resize Handles */}
+                <span className="w-1.5 h-1.5 bg-white dark:bg-[#12151c] border border-blue-500 absolute -top-1 -left-1 rounded-xs" />
+                <span className="w-1.5 h-1.5 bg-white dark:bg-[#12151c] border border-blue-500 absolute -top-1 -right-1 rounded-xs" />
+                <span className="w-1.5 h-1.5 bg-white dark:bg-[#12151c] border border-blue-500 absolute -bottom-1 -left-1 rounded-xs" />
+                <span className="w-1.5 h-1.5 bg-white dark:bg-[#12151c] border border-blue-500 absolute -right-1 -bottom-1 rounded-xs" />
+
+                <div className="h-2 w-full rounded-xs bg-gray-300 dark:bg-[#2c374a]" />
+
+                {/* Animated Inner Box Color */}
+                <motion.div
+                  animate={{
+                    backgroundColor: [
+                      '#3b82f6',
+                      '#3b82f6',
+                      '#171717',
+                      '#171717',
+                      '#3b82f6'
+                    ]
+                  }}
+                  transition={{
+                    duration: 6,
+                    repeat: Infinity,
+                    times: [0, 0.45, 0.5, 0.95, 1],
+                    ease: 'easeInOut'
+                  }}
+                  className="flex-1 rounded-xs transition-colors duration-300"
+                />
+              </motion.div>
+            </div>
+
+            {/* Right Inspector Sidebar: Color Pickers */}
+            <div className="w-16 sm:w-20 border-l border-gray-200 dark:border-[#1f2633] bg-gray-50/90 dark:bg-[#161a23]/90 backdrop-blur-xs flex flex-col gap-1.5 p-1.5 z-10 shrink-0">
+              <div className="border-b border-gray-200 dark:border-[#1f2633] pb-1 flex justify-between items-center gap-1">
+                <div className="w-2 h-2 rounded bg-gray-400 dark:bg-[#404e68]" />
+                <div className="w-4 h-2 rounded-xs bg-blue-500" />
+              </div>
+              <div className="h-1 w-3/4 rounded bg-gray-400 dark:bg-[#404e68]" />
+
+              {/* Color Item 1: Dark (#171717) */}
+              <motion.div
+                animate={{
+                  borderColor: [
+                    'rgba(229, 231, 235, 1)',
+                    'rgba(229, 231, 235, 1)',
+                    'rgba(156, 163, 175, 1)',
+                    'rgba(156, 163, 175, 1)',
+                    'rgba(229, 231, 235, 1)'
+                  ]
+                }}
+                transition={{ duration: 6, repeat: Infinity, times: [0, 0.45, 0.5, 0.95, 1] }}
+                className="bg-white dark:bg-[#12151c] border border-gray-200 dark:border-[#283245] rounded p-1 flex items-center gap-1 shadow-xs"
+              >
+                <div className="w-2.5 h-2.5 rounded-xs border border-gray-300 dark:border-gray-700 bg-[#171717] shrink-0" />
+                <span className="font-mono text-[7px] text-gray-600 dark:text-neutral-300 tracking-tighter">#171717</span>
+              </motion.div>
+
+              {/* Color Item 2: Blue (#3b82f6) */}
+              <motion.div
+                animate={{
+                  borderColor: [
+                    'rgba(59, 130, 246, 1)',
+                    'rgba(59, 130, 246, 1)',
+                    'rgba(229, 231, 235, 1)',
+                    'rgba(229, 231, 235, 1)',
+                    'rgba(59, 130, 246, 1)'
+                  ]
+                }}
+                transition={{ duration: 6, repeat: Infinity, times: [0, 0.45, 0.5, 0.95, 1] }}
+                className="bg-white dark:bg-[#12151c] border border-blue-500 dark:border-blue-500 rounded p-1 flex items-center gap-1 shadow-xs"
+              >
+                <div className="w-2.5 h-2.5 rounded-xs border border-blue-600 bg-blue-500 shrink-0" />
+                <span className="font-mono text-[7px] text-blue-600 dark:text-blue-400 tracking-tighter font-semibold">#3b82f6</span>
+              </motion.div>
+            </div>
+
+            {/* Mouse Cursor Animation */}
+            <motion.div
+              animate={{
+                left: ['76%', '76%', '76%', '76%', '76%'],
+                top: ['72%', '72%', '52%', '52%', '72%'],
+                scale: [1, 0.85, 1, 0.85, 1]
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                times: [0, 0.1, 0.5, 0.6, 1],
+                ease: 'easeInOut'
+              }}
+              className="absolute z-30 pointer-events-none drop-shadow-md -translate-x-1/2 -translate-y-1/2"
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" className="text-gray-900 dark:text-white">
+                <path d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" fill="currentColor" stroke="currentColor" strokeWidth="0.5" />
+              </svg>
+            </motion.div>
           </div>
         </div>
       </div>
@@ -428,10 +548,10 @@ export function UiUxMockup() {
 
 export function ProjectManagementMockup() {
   return (
-    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden group transition-colors duration-300 select-none">
+    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden transition-colors duration-300 select-none">
       <div className="absolute inset-0 bg-[radial-gradient(#80808025_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:14px_14px] pointer-events-none" />
 
-      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative transition-transform duration-300 group-hover:scale-[1.02] shrink-0 p-2 justify-between">
+      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative shrink-0 p-2 justify-between">
         <div className="flex items-center gap-1.5 mb-1">
           <span className="w-2 h-2 rounded-full bg-[#ff5f56]" />
           <span className="w-2 h-2 rounded-full bg-[#ffbd2e]" />
@@ -471,10 +591,10 @@ export function ProjectManagementMockup() {
 
 export function DevOpsMockup() {
   return (
-    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden group transition-colors duration-300 select-none">
+    <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden transition-colors duration-300 select-none">
       <div className="absolute inset-0 bg-[radial-gradient(#80808025_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:14px_14px] pointer-events-none" />
 
-      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative transition-transform duration-300 group-hover:scale-[1.02] shrink-0 p-2 justify-between">
+      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative shrink-0 p-2 justify-between">
         <div className="flex items-center gap-1.5 mb-1">
           <span className="w-2 h-2 rounded-full bg-[#ff5f56]" />
           <span className="w-2 h-2 rounded-full bg-[#ffbd2e]" />
@@ -520,8 +640,7 @@ export function MockupRenderer({ id }) {
       return <FrontendMockup />;
     case 'backend':
       return <BackendMockup />;
-    case 'android':
-      return <AndroidMockup />;
+
     case 'uiux':
       return <UiUxMockup />;
     case 'pm':

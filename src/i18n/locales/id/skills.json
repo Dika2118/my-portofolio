@@ -12,10 +12,7 @@
       "title": "Back-End Development",
       "description": "Mengembangkan API dan arsitektur basis data yang tangguh, aman, dan skalabel."
     },
-    "android": {
-      "title": "Android Development",
-      "description": "Mengembangkan aplikasi Android native dengan performa tinggi dan fitur yang lengkap."
-    },
+
     "uiux": {
       "title": "UI/UX Design",
       "description": "Merancang pengalaman digital dan wireframe yang berpusat pada pengguna, mudah diakses, dan menarik secara visual."

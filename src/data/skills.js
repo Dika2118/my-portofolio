@@ -36,21 +36,7 @@ export const skillsData = {
         { name: "+5", icon: "more" }
       ]
     },
-    {
-      id: "android",
-      title: "Android Development",
-      badge: "Intermediate",
-      badgeType: "intermediate",
-      description: "Mengembangkan aplikasi Android native dengan performa tinggi dan fitur yang lengkap.",
-      tags: [
-        { name: "Kotlin", icon: "kotlin" },
-        { name: "Jetpack Compose", icon: "jetpack" },
-        { name: "Android View", icon: "android" },
-        { name: "Android SDK", icon: "sdk" },
-        { name: "Gradle", icon: "gradle" },
-        { name: "MVVM", icon: "mvvm" }
-      ]
-    },
+
     {
       id: "uiux",
       title: "UI/UX Design",

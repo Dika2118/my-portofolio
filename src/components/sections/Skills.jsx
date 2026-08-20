@@ -75,7 +75,7 @@ const iconMap = {
 function TagIcon({ iconKey }) {
   const IconComponent = iconMap[iconKey] || Code;
   return (
-    <IconComponent className="w-3.5 h-3.5 text-gray-500 dark:text-neutral-400 group-hover/tag:text-blue-600 dark:group-hover/tag:text-blue-400 transition-colors" />
+    <IconComponent className="w-3.5 h-3.5 text-gray-500 dark:text-neutral-400" />
   );
 }
 
@@ -105,7 +105,7 @@ export default function Skills() {
             return (
               <div
                 key={item.id}
-                className="w-[84vw] max-w-[340px] sm:w-[360px] md:w-auto md:max-w-none shrink-0 snap-start md:shrink bg-white dark:bg-[#0e1117] rounded-2xl border border-gray-200 dark:border-[#1d2433] hover:border-gray-300 dark:hover:border-[#2b374e] transition-all duration-300 overflow-hidden flex flex-col justify-between group shadow-sm hover:shadow-lg dark:shadow-none md:hover:-translate-y-1"
+                className="w-[84vw] max-w-[340px] sm:w-[360px] md:w-auto md:max-w-none shrink-0 snap-start md:shrink bg-white dark:bg-[#0e1117] rounded-2xl border border-gray-200 dark:border-[#1d2433] overflow-hidden flex flex-col justify-between shadow-sm dark:shadow-none"
               >
                 {/* Card Top: UI Window Mockup */}
                 <MockupRenderer id={item.id} />
@@ -143,7 +143,7 @@ export default function Skills() {
                     {item.tags.map((tag, idx) => (
                       <div
                         key={idx}
-                        className="bg-gray-100 dark:bg-[#181d28] border border-gray-200 dark:border-[#263044] hover:border-gray-300 dark:hover:border-[#3b82f6]/40 text-gray-800 dark:text-neutral-300 text-xs px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 transition-colors group/tag cursor-default"
+                        className="bg-gray-100 dark:bg-[#181d28] border border-gray-200 dark:border-[#263044] text-gray-800 dark:text-neutral-300 text-xs px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 cursor-default"
                       >
                         <TagIcon iconKey={tag.icon} />
                         <span className="font-medium text-[11px] text-gray-800 dark:text-neutral-300">{tag.name}</span>
