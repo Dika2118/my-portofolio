@@ -53,6 +53,7 @@ export const skillsData = {
         { name: "Prototyping", icon: "prototype" }
       ]
     },
+/*
     {
       id: "pm",
       title: "Project Management",
@@ -83,6 +84,7 @@ export const skillsData = {
         { name: "Nginx", icon: "nginx" }
       ]
     }
+*/
   ]
 };
 
