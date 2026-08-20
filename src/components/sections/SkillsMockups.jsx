@@ -214,49 +214,124 @@ export function FrontendMockup() {
 export function BackendMockup() {
   return (
     <div className="w-full h-52 bg-[#fafafa] dark:bg-[#090b0e] rounded-t-2xl border-b border-gray-200 dark:border-[#1e2430] p-4 flex items-center justify-center relative overflow-hidden group transition-colors duration-300 select-none">
+      {/* Background Radial Dot Grid */}
       <div className="absolute inset-0 bg-[radial-gradient(#80808025_1px,transparent_1px)] dark:bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:14px_14px] pointer-events-none" />
 
-      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative transition-transform duration-300 group-hover:scale-[1.02] shrink-0 p-2.5 justify-between">
-        {/* Window Title Bar */}
-        <div className="flex items-center justify-between mb-1">
-          <div className="flex items-center gap-1.5">
-            <span className="w-2 h-2 rounded-full bg-[#ff5f56]" />
-            <span className="w-2 h-2 rounded-full bg-[#ffbd2e]" />
-            <span className="w-2 h-2 rounded-full bg-[#27c93f]" />
-          </div>
-          <div className="w-6 h-3 bg-gray-100 dark:bg-[#1c2230] rounded border border-gray-200 dark:border-[#2a3447] flex items-center justify-center">
-            <div className="w-1.5 h-1.5 bg-[#06b6d4] rounded-full" />
-          </div>
+      {/* Floating Centered Window Mockup */}
+      <div className="w-[240px] sm:w-[265px] h-[155px] sm:h-[170px] bg-white dark:bg-[#12151c] rounded-xl border border-gray-200 dark:border-[#1f2633] shadow-md dark:shadow-[0_10px_25px_-5px_rgba(0,0,0,0.5)] flex flex-col overflow-hidden relative transition-transform duration-300 group-hover:scale-[1.02] shrink-0">
+        {/* Title Bar */}
+        <div className="bg-gray-100/90 dark:bg-[#181c26] border-b border-gray-200 dark:border-[#1f2633] px-2.5 py-1.5 flex items-center gap-1.5 shrink-0 z-30">
+          <span className="w-2 h-2 rounded-full bg-[#ff5f56]" />
+          <span className="w-2 h-2 rounded-full bg-[#ffbd2e]" />
+          <span className="w-2 h-2 rounded-full bg-[#27c93f]" />
+          <div className="ml-1.5 h-1.5 flex-1 rounded-full bg-gray-200 dark:bg-[#252d3d]" />
         </div>
 
-        {/* Architecture Graphic */}
-        <div className="flex-1 bg-white dark:bg-[#12151c] rounded-lg border border-gray-200 dark:border-[#1f2633] p-2 flex flex-col items-center justify-center relative shadow-xs transition-colors duration-300">
-          <div className="w-28 h-5 bg-gray-50 dark:bg-[#1e2638] rounded border border-blue-400/50 flex items-center justify-between px-2 text-[9px] text-blue-600 dark:text-blue-400 font-mono shadow-xs">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6]" />
-            <span>API / Router</span>
-            <span className="text-[#22c55e] font-semibold">200</span>
-          </div>
+        {/* Content Area */}
+        <div className="flex-1 overflow-hidden relative bg-white dark:bg-[#12151c] p-2 flex flex-col items-center justify-between">
+          {/* Top Row: Code Box (Left) and UI Box (Right) with branching connector line */}
+          <div className="relative z-10 flex w-full items-center justify-between px-3">
+            {/* Branching Lines from Top Windows to Center */}
+            <div className="border-gray-300 dark:border-[#2b3547] absolute top-full right-8 left-9.5 h-2 rounded-b-sm border-x border-b pointer-events-none" />
+            <div className="bg-gray-300 dark:bg-[#2b3547] absolute top-full left-1/2 mt-2 h-1.5 w-px -translate-x-1/2 pointer-events-none" />
 
-          <div className="w-px h-2.5 bg-gray-300 dark:bg-[#333e54] my-0.5 relative">
-            <div className="w-1 h-1 rounded-full bg-blue-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-ping" />
-          </div>
-
-          <div className="w-36 flex justify-between relative">
-            <div className="w-14 h-4.5 bg-gray-50 dark:bg-[#182030] rounded border border-gray-200 dark:border-[#2b374e] flex items-center justify-center text-[8px] text-gray-700 dark:text-gray-300 shadow-xs">
-              Auth Service
+            {/* Left Box: Code Snippet Window */}
+            <div className="border border-gray-200 dark:border-[#1f2633] bg-gray-50 dark:bg-[#161a23] z-10 flex h-8 w-14 flex-col overflow-hidden rounded shadow-xs">
+              <div className="bg-gray-100 dark:bg-[#181c26] border-b border-gray-200 dark:border-[#1f2633] flex h-2 w-full shrink-0 items-center gap-[2.5px] px-1">
+                <div className="bg-[#ff5f56] h-[2.5px] w-[2.5px] rounded-full" />
+                <div className="bg-[#ffbd2e] h-[2.5px] w-[2.5px] rounded-full" />
+                <div className="bg-[#27c93f] h-[2.5px] w-[2.5px] rounded-full" />
+              </div>
+              <div className="flex flex-1 items-start overflow-hidden p-1">
+                <motion.div
+                  animate={{ translateY: [0, -8, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+                  className="flex w-full flex-col gap-[2.5px]"
+                >
+                  <div className="bg-gray-400 dark:bg-[#404e68] h-0.5 w-3/4 rounded-full" />
+                  <div className="bg-blue-500 h-0.5 w-1/2 rounded-full" />
+                  <div className="bg-gray-400 dark:bg-[#404e68] h-0.5 w-full rounded-full" />
+                  <div className="bg-emerald-500 h-0.5 w-2/3 rounded-full" />
+                </motion.div>
+              </div>
             </div>
-            <div className="w-14 h-4.5 bg-gray-50 dark:bg-[#182030] rounded border border-gray-200 dark:border-[#2b374e] flex items-center justify-center text-[8px] text-gray-700 dark:text-gray-300 shadow-xs">
-              Data Handler
+
+            {/* Right Box: UI Component Window */}
+            <div className="border border-gray-200 dark:border-[#1f2633] bg-gray-50 dark:bg-[#161a23] z-10 flex h-7 w-11 flex-col items-center justify-center gap-1 rounded shadow-xs">
+              <motion.div
+                animate={{ rotate: 360 }}
+                transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
+                className="w-2 h-2 rounded-xs border border-dashed border-blue-500"
+              />
+              <div className="bg-gray-400 dark:bg-[#404e68] h-0.5 w-5 rounded-full" />
             </div>
           </div>
 
-          <div className="w-px h-2.5 bg-gray-300 dark:bg-[#333e54] my-0.5" />
+          {/* Middle Box: Server / API Controller */}
+          <div className="border border-gray-200 dark:border-[#1f2633] bg-gray-50 dark:bg-[#161a23] relative z-10 mt-3.5 flex h-6.5 w-28 items-center justify-between rounded px-2 shadow-xs">
+            <div className="flex flex-col gap-1">
+              <div className="bg-gray-400 dark:bg-[#404e68] h-0.5 w-8 rounded-full" />
+              <div className="bg-gray-300 dark:bg-[#2c374a] h-0.5 w-5 rounded-full" />
+            </div>
+            <div className="flex gap-1">
+              <motion.div
+                animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
+                transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                className="h-1.5 w-1.5 rounded-full bg-emerald-500"
+              />
+              <motion.div
+                animate={{ scale: [1, 1.3, 1], opacity: [0.7, 1, 0.7] }}
+                transition={{ duration: 2, delay: 0.5, repeat: Infinity, ease: 'easeInOut' }}
+                className="h-1.5 w-1.5 rounded-full bg-blue-500"
+              />
+            </div>
+          </div>
 
-          <div className="w-20 h-7 bg-gray-50 dark:bg-[#1a2233] rounded-lg border border-gray-300 dark:border-[#2e3b56] flex items-center justify-center gap-1.5 relative shadow-xs">
-            <svg className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
-            </svg>
-            <span className="w-1.5 h-1.5 rounded-full bg-red-500 absolute -top-0.5 -right-0.5" />
+          {/* Vertical Lines with Animated Moving Packets/Dots */}
+          <div className="relative z-0 flex h-5 w-14 shrink-0 justify-between px-1">
+            {/* Line 1 (Red Dot) */}
+            <div className="bg-gray-300 dark:bg-[#2b3547] relative h-full w-px">
+              <motion.div
+                animate={{ top: ['0%', '80%', '0%'] }}
+                transition={{ duration: 2.4, repeat: Infinity, ease: 'easeInOut' }}
+                className="absolute left-1/2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-rose-500 shadow-[0_0_6px_rgba(244,63,94,0.8)] z-10"
+              />
+            </div>
+            {/* Line 2 (Blue Dot) */}
+            <div className="bg-gray-300 dark:bg-[#2b3547] relative h-full w-px">
+              <motion.div
+                animate={{ top: ['80%', '0%', '80%'] }}
+                transition={{ duration: 1.9, repeat: Infinity, ease: 'easeInOut' }}
+                className="absolute left-1/2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-blue-500 shadow-[0_0_6px_rgba(59,130,246,0.8)] z-10"
+              />
+            </div>
+            {/* Line 3 (Green Dot) */}
+            <div className="bg-gray-300 dark:bg-[#2b3547] relative h-full w-px">
+              <motion.div
+                animate={{ top: ['15%', '85%', '15%'] }}
+                transition={{ duration: 2.7, repeat: Infinity, ease: 'easeInOut' }}
+                className="absolute left-1/2 h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-emerald-500 shadow-[0_0_6px_rgba(16,185,129,0.8)] z-10"
+              />
+            </div>
+          </div>
+
+          {/* Bottom Box: Database Cylinder */}
+          <div className="relative z-10 mb-0.5 h-7 w-14 shrink-0 drop-shadow-xs">
+            {/* Base Ellipse */}
+            <div className="border border-gray-300 dark:border-[#2e3b56] bg-gray-100 dark:bg-[#161c28] absolute bottom-0 z-0 h-2.5 w-full rounded-[50%]" />
+            {/* Cylinder Wall */}
+            <div className="border-x border-gray-300 dark:border-[#2e3b56] bg-gray-100 dark:bg-[#161c28] absolute top-1.25 z-10 h-4.5 w-full" />
+            {/* Middle Divider Curve */}
+            <div className="border-b border-gray-300 dark:border-[#2e3b56] absolute top-2.5 z-20 h-2.5 w-full rounded-[50%]" />
+            {/* Top Ellipse Surface */}
+            <div className="border border-gray-300 dark:border-[#2e3b56] bg-gray-100 dark:bg-[#1a2232] absolute top-0 z-30 flex h-2.5 w-full items-center justify-center rounded-[50%]">
+              {/* Inner Glowing Ring */}
+              <motion.div
+                animate={{ scale: [0.45, 0.75, 0.45], opacity: [0.4, 0.9, 0.4] }}
+                transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                className="border border-blue-500 absolute h-full w-full rounded-[50%]"
+              />
+            </div>
           </div>
         </div>
       </div>
