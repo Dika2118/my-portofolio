@@ -2,82 +2,8 @@ import React from 'react';
 import { skillsCategories } from '../../data/skills';
 import { MockupRenderer } from './SkillsMockups';
 import { useLanguage } from '../../i18n';
-import {
-  Crown,
-  FileCode,
-  Palette,
-  Code2,
-  Code,
-  Globe,
-  Server,
-  Terminal,
-  Flame,
-  Smartphone,
-  Layers,
-  Box,
-  Wrench,
-  Cpu,
-  Boxes,
-  BookOpen,
-  Layout,
-  Sparkles,
-  Workflow,
-  ListChecks,
-  FileText,
-  Kanban,
-  Grid,
-  Cloud,
-  Settings,
-  Plus
-} from 'lucide-react';
-
-const iconMap = {
-  html: FileCode,
-  css: Palette,
-  javascript: Code2,
-  typescript: Code,
-  vue: Code2,
-  react: Code2,
-  next: Globe,
-  php: Server,
-  node: Server,
-  express: Terminal,
-  laravel: Flame,
-  codeigniter: Flame,
-  kotlin: Smartphone,
-  jetpack: Layers,
-  android: Smartphone,
-  sdk: Box,
-  gradle: Wrench,
-  mvvm: Cpu,
-  figma: Layout,
-  adobe: Palette,
-  designsystem: Layers,
-  tokenstudio: Boxes,
-  styledictionary: BookOpen,
-  wireframe: Layout,
-  prototype: Sparkles,
-  scrum: Workflow,
-  jira: ListChecks,
-  confluence: FileText,
-  trello: Kanban,
-  miro: Grid,
-  linux: Terminal,
-  docker: Box,
-  gcp: Cloud,
-  aws: Cloud,
-  jenkins: Settings,
-  githubactions: Workflow,
-  nginx: Server,
-  more: Plus
-};
-
-function TagIcon({ iconKey }) {
-  const IconComponent = iconMap[iconKey] || Code;
-  return (
-    <IconComponent className="w-3.5 h-3.5 text-gray-500 dark:text-neutral-400" />
-  );
-}
+import { Crown } from 'lucide-react';
+import { TechTagIcon } from '../ui/TechIcons';
 
 export default function Skills() {
   const { t } = useLanguage();
@@ -143,9 +69,9 @@ export default function Skills() {
                     {item.tags.map((tag, idx) => (
                       <div
                         key={idx}
-                        className="bg-gray-100 dark:bg-[#181d28] border border-gray-200 dark:border-[#263044] text-gray-800 dark:text-neutral-300 text-xs px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 cursor-default"
+                        className="bg-gray-100 dark:bg-[#181d28] border border-gray-200 dark:border-[#263044] text-gray-800 dark:text-neutral-300 text-xs px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 cursor-default transition-colors hover:border-gray-300 dark:hover:border-[#384660]"
                       >
-                        <TagIcon iconKey={tag.icon} />
+                        <TechTagIcon iconKey={tag.icon} className="w-3.5 h-3.5 shrink-0 text-gray-700 dark:text-neutral-300" />
                         <span className="font-medium text-[11px] text-gray-800 dark:text-neutral-300">{tag.name}</span>
                       </div>
                     ))}

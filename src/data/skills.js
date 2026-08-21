@@ -13,10 +13,9 @@ export const skillsData = {
         { name: "CSS", icon: "css" },
         { name: "JavaScript", icon: "javascript" },
         { name: "TypeScript", icon: "typescript" },
-        { name: "Vue.js", icon: "vue" },
         { name: "React", icon: "react" },
-        { name: "Next.js", icon: "next" },
-        { name: "+12", icon: "more" }
+        { name: "Tailwind CSS", icon: "tailwind" },
+        { name: "Vite", icon: "vite" }
       ]
     },
     {
