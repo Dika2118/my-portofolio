@@ -1,29 +1,46 @@
 {
-  "title": "Pengalaman Kerja",
+  "title": "Pengalaman kerja",
   "subtitle": "Perjalanan karir profesional dan kontribusi saya di industri teknologi.",
+  "contributionsLabel": "KONTRIBUSI :",
+  "galleryLabel": "GALERI :",
   "items": [
     {
       "id": 1,
-      "role": "Senior Frontend Developer",
-      "company": "Tech Solutions Indonesia",
-      "period": "2023 - Sekarang",
-      "description": "Memimpin tim frontend dalam merancang dan memelihara aplikasi web berskala besar, meningkatkan performa halaman hingga 40%.",
-      "responsibilities": [
-        "Mengembangkan arsitektur UI berbasis React & Tailwind CSS",
-        "Mentoring developer junior dan melakukan code review secara berkala",
-        "Mengoptimalkan performa web dan aksesibilitas (SEO & Lighthouse)"
+      "role": "UX Engineer (Web & Android)",
+      "company": "Blibli",
+      "period": "Agu 2022 - Okt 2025",
+      "location": "Jakarta, Indonesia",
+      "type": "Penuh waktu",
+      "contributions": [
+        "Mempelopori **BLUE Android** dan mengembangkan **BLUE Web**, menciptakan pengalaman lintas platform yang mulus serta **berhasil meningkatkan kepuasan pengguna dalam mengurangi redundansi UI (8,48/10)** dan **mempercepat durasi pengembangan (8,42/10)**.",
+        "Merancang dan membangun **BLUE Docsite** dari nol sebagai PIC, mengintegrasikan CMS yang **memangkas waktu pembaruan konten hingga 90%** serta **meningkatkan Monthly Active Users (MAU)**.",
+        "Mengembangkan internal UX engineering tools seperti `Figma-to-Compose Code Generator` dan `UXE Icon Checker`, mengoptimalkan alur kerja desain-ke-kode serta **memastikan aset berkualitas tinggi yang siap digunakan di tahap produksi**.",
+        "Menjembatani komunikasi antara desainer, product manager, dan developer, hingga **mencapai skor feedback positif sebesar 91% dari para developer**.",
+        "Membimbing dan melatih **peserta magang** dalam proses slicing desain-ke-kode serta alur kerja pengembangan sistem desain."
       ]
     },
     {
       "id": 2,
-      "role": "Full Stack Web Developer",
-      "company": "Digital Studio Creative",
-      "period": "2021 - 2023",
-      "description": "Membangun berbagai solusi web kustom untuk klien dari berbagai industri bisnis.",
-      "responsibilities": [
-        "Pengembangan RESTful API menggunakan Node.js dan Express",
-        "Integrasi antarmuka React dengan backend database MongoDB",
-        "Berkolaborasi langsung dengan desainer UI/UX"
+      "role": "UX Engineer Intern",
+      "company": "Blibli",
+      "period": "Mar 2022 - Agu 2022",
+      "location": "Jakarta, Indonesia",
+      "type": "Magang",
+      "contributions": [
+        "Berkolaborasi dengan tim UX Engineering dalam membangun dan menguji komponen UI untuk platform **Blibli Android** dan **Web**.",
+        "Mengembangkan dokumentasi komponen sistem desain dan membantu integrasi alur kerja desain-ke-kode."
+      ]
+    },
+    {
+      "id": 3,
+      "role": "Web Developer",
+      "company": "PT Satya Kencana Pasundan",
+      "period": "Apr 2021 - Mar 2022",
+      "location": "Tasikmalaya, Indonesia",
+      "type": "Penuh waktu",
+      "contributions": [
+        "Merancang dan mengembangkan aplikasi web internal dan sistem manajemen data perusahaan.",
+        "Mengoptimalkan performa situs dan antarmuka pengguna agar lebih intuitif dan responsif."
       ]
     }
   ]
