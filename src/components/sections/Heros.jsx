@@ -57,7 +57,7 @@ export default function Heros() {
   const stats = [
     { label: t('hero.stats.experience'), value: "4+" },
     { label: t('hero.stats.services'), value: "6" },
-    { label: t('hero.stats.projects'), value: "7" },
+    { label: t('hero.stats.projects'), value: "8" },
     { label: t('hero.stats.achievements'), value: "15" },
     { label: t('hero.stats.articles'), value: "1" },
   ];

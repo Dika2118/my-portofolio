@@ -1,5 +1,5 @@
 {
-  "title": "Proyek Terbaru",
+  "title": "Proyek Yang\nDikerjakan",
   "subtitle": "Beberapa karya terbaik yang telah saya selesaikan dengan fokus pada UX, kecepatan, dan skala.",
   "featured": "Unggulan",
   "liveDemo": "Live Demo",
@@ -7,18 +7,43 @@
   "items": [
     {
       "id": 1,
-      "title": "Platform E-Commerce Modern",
-      "description": "Platform belanja online responsif dengan fitur keranjang real-time, penyaringan produk, dan sistem manajemen pembayaran."
+      "title": "Apotek Saddasa Farma",
+      "description": "Platform apotek digital terpercaya di Denpasar, Bali dengan fitur katalog obat, layanan antar obat, dan konsultasi apoteker online."
     },
     {
       "id": 2,
-      "title": "Dashboard Analisis Finansial",
-      "description": "Aplikasi web manajemen keuangan pribadi dan bisnis dengan visualisasi grafik interaktif dan laporan analytics."
+      "title": "Kitagiat Admin Portal",
+      "description": "Portal sistem manajemen sekolah terintegrasi untuk pengelolaan data siswa, guru, pembayaran Midtrans, dan administrasi akademik."
     },
     {
       "id": 3,
-      "title": "AI Writing & Productivity Tool",
-      "description": "Alat bantu penulisan cerdas yang memanfaatkan integrasi AI untuk pembuatan konten, deskripsi produk, dan rangkuman dokumen."
+      "title": "Kitagiat CBT Platform",
+      "description": "Platform Ujian Berbasis Komputer (CBT) interaktif dan secure untuk pelaksanaan ujian online sekolah secara real-time."
+    },
+    {
+      "id": 4,
+      "title": "Kitagiat Absensi & QR Scan",
+      "description": "Sistem absensi digital sekolah menggunakan pemindaian QR Code dan entri presensi real-time."
+    },
+    {
+      "id": 5,
+      "title": "Saru Studio Project Management",
+      "description": "Sistem manajemen proyek elegan untuk tim dalam melacak progres pekerjaan, tugas, dan kolaborasi kerja yang efisien."
+    },
+    {
+      "id": 6,
+      "title": "Namora Beach Kelan",
+      "description": "Website resmi restoran beachfront dining di Pantai Kelan Bali dengan tampilan menawan dan informasi menu serta reservasi."
+    },
+    {
+      "id": 7,
+      "title": "ARTDEVATA POS (Pedra Cafe)",
+      "description": "Aplikasi Kasir / Point of Sale (POS) modern & efisien untuk manajemen transaksi resto, stok, dan kasir cafe."
+    },
+    {
+      "id": 8,
+      "title": "Personal Portfolio Website",
+      "description": "Portofolio interaktif modern dengan 3D Canvas, animasi Framer Motion, dan dukungan multi-bahasa."
     }
   ]
 }

@@ -11,13 +11,10 @@ export default function Projects() {
     <section id="projects" className="py-20 bg-background text-foreground transition-colors duration-300 overflow-hidden">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center space-y-4 mb-14">
-          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white font-sans">
+        <div className="text-left space-y-4 mb-14">
+          <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white font-sans whitespace-pre-line">
             {t('projects.title')}
           </h2>
-          <p className="text-gray-600 dark:text-neutral-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
-            {t('projects.subtitle')}
-          </p>
         </div>
 
         {/* Horizontal Peek Carousel on Mobile, Grid on Tablet/Desktop */}

@@ -1,5 +1,5 @@
 {
-  "title": "Latest Projects",
+  "title": "Projects\nBeing Worked On",
   "subtitle": "Some of my best work focused on UX, performance, and scale.",
   "featured": "Featured",
   "liveDemo": "Live Demo",
@@ -7,18 +7,43 @@
   "items": [
     {
       "id": 1,
-      "title": "Modern E-Commerce Platform",
-      "description": "Responsive online shopping platform featuring real-time cart, product filtering, and payment management system."
+      "title": "Saddasa Farma Pharmacy",
+      "description": "Trusted digital pharmacy platform in Denpasar, Bali featuring medicine catalog, delivery service, and online pharmacist consultation."
     },
     {
       "id": 2,
-      "title": "Financial Analytics Dashboard",
-      "description": "Personal & business finance web app with interactive charts and analytics reporting."
+      "title": "Kitagiat Admin Portal",
+      "description": "Integrated school management portal for managing student data, teachers, Midtrans payment integration, and academic administration."
     },
     {
       "id": 3,
-      "title": "AI Writing & Productivity Tool",
-      "description": "Smart writing tool leveraging AI integrations for content creation, product descriptions, and document summaries."
+      "title": "Kitagiat CBT Platform",
+      "description": "Interactive and secure Computer-Based Testing (CBT) platform for real-time online school examinations."
+    },
+    {
+      "id": 4,
+      "title": "Kitagiat Attendance & QR Scan",
+      "description": "Digital school attendance system featuring QR Code scanning and real-time presence tracking."
+    },
+    {
+      "id": 5,
+      "title": "Saru Studio Project Management",
+      "description": "Elegant project management system for teams to track task progress, project milestones, and efficient collaboration."
+    },
+    {
+      "id": 6,
+      "title": "Namora Beach Kelan",
+      "description": "Official website for beachfront dining restaurant at Kelan Beach Bali featuring stunning UI, menu info, and reservation."
+    },
+    {
+      "id": 7,
+      "title": "ARTDEVATA POS (Pedra Cafe)",
+      "description": "Modern & efficient Point of Sale (POS) application for cafe transaction management, inventory, and cashier workflow."
+    },
+    {
+      "id": 8,
+      "title": "Personal Portfolio Website",
+      "description": "Modern interactive portfolio with 3D Canvas, Framer Motion animations, and multi-language support."
     }
   ]
 }
