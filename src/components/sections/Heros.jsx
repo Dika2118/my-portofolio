@@ -43,7 +43,7 @@ function TypewriterTagline({ text }) {
         <motion.span
           animate={{ opacity: [1, 0] }}
           transition={{ duration: 0.6, repeat: Infinity, ease: 'easeInOut' }}
-          className="ml-1 sm:ml-2 inline-block w-1.5 sm:w-2 sm:h-12 md:h-16 lg:h-20 h-8 bg-neutral-100 dark:bg-neutral-200 rounded-xs align-middle"
+          className="ml-1 sm:ml-2 inline-block w-1.5 sm:w-2 h-6 sm:h-12 md:h-16 lg:h-20 bg-neutral-100 dark:bg-neutral-200 rounded-xs align-middle"
         />
       )}
     </span>
@@ -73,7 +73,7 @@ export default function Heros() {
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           onMouseEnter={() => setIsBannerHovered(true)}
           onMouseLeave={() => setIsBannerHovered(false)}
-          className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-950 border border-border shadow-2xl flex flex-col justify-end items-center min-h-75 sm:min-h-105 md:min-h-100 group/banner"
+          className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-neutral-950 border border-border shadow-2xl flex flex-col justify-end items-center min-h-84 sm:min-h-105 md:min-h-100 group/banner"
         >
           {/* 3D Interactive Light Canvas Background */}
           <div className="absolute inset-0 pointer-events-none z-0">
@@ -99,8 +99,8 @@ export default function Heros() {
           </motion.div>
 
           {/* Tagline Text - Typewriter Effect */}
-          <div className="relative z-20 w-full text-center pb-6 sm:pb-10 pointer-events-none select-none">
-            <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 via-neutral-200/50 to-neutral-950/80 drop-shadow-md flex items-center justify-center">
+          <div className="relative z-20 w-full text-center pb-24 sm:pb-10 pointer-events-none select-none px-2">
+            <h2 className="text-3xl xs:text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 via-neutral-200/50 to-neutral-950/80 drop-shadow-md flex items-center justify-center">
               <TypewriterTagline text={t('hero.tagline') || 'Think.Design.Develop'} />
             </h2>
           </div>
