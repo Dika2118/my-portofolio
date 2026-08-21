@@ -41,12 +41,8 @@ export const skillsData = {
       description: "Merancang pengalaman digital dan wireframe yang berpusat pada pengguna, mudah diakses, dan menarik secara visual.",
       tags: [
         { name: "Figma", icon: "figma" },
-        { name: "Adobe", icon: "adobe" },
         { name: "Design System", icon: "designsystem" },
-        { name: "Token Studio", icon: "tokenstudio" },
-        { name: "Style Dictionary", icon: "styledictionary" },
-        { name: "Wireframing", icon: "wireframe" },
-        { name: "Prototyping", icon: "prototype" }
+        { name: "Wireframing", icon: "wireframe" }
       ]
     },
     /*
