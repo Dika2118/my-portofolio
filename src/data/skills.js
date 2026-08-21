@@ -28,11 +28,8 @@ export const skillsData = {
         { name: "JavaScript", icon: "javascript" },
         { name: "TypeScript", icon: "typescript" },
         { name: "PHP", icon: "php" },
-        { name: "Node.js", icon: "node" },
-        { name: "Express", icon: "express" },
         { name: "Laravel", icon: "laravel" },
-        { name: "CodeIgniter", icon: "codeigniter" },
-        { name: "+5", icon: "more" }
+        { name: "MySQL", icon: "mysql" }
       ]
     },
 
