@@ -66,9 +66,9 @@ export default function Heros() {
     <section id="hero" className="pt-24 sm:pt-28 pb-16 min-h-screen flex flex-col justify-center bg-background text-foreground relative overflow-hidden transition-colors duration-300">
       <div className="container mx-auto px-4 max-w-340 relative z-10">
 
-        {/* Top 3D Interactive Background Banner - Fade in falling from top */}
+        {/* Top 3D Interactive Background Banner - Fade in from bottom to top */}
         <motion.div
-          initial={{ opacity: 0, y: -70 }}
+          initial={{ opacity: 0, y: 70 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
           onMouseEnter={() => setIsBannerHovered(true)}
@@ -84,14 +84,19 @@ export default function Heros() {
 
           <div className="absolute inset-0 pointer-events-none opacity-35 dark:opacity-40 bg-[radial-gradient(rgba(255,255,255,0.2)_1px,transparent_1px)] [background-size:20px_20px] [mask-image:radial-gradient(ellipse_75%_75%_at_50%_40%,#000_65%,transparent_100%)]" />
 
-          {/* Profile Silhouette Image */}
-          <div className="absolute inset-x-0 top-0 bottom-0 flex justify-center items-start pt-1 sm:pt-2 pointer-events-none z-10">
+          {/* Profile Silhouette Image - Fade in rising from bottom to top */}
+          <motion.div
+            initial={{ opacity: 0, y: 80 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+            className="absolute inset-x-0 top-0 bottom-0 flex justify-center items-start pt-1 sm:pt-2 pointer-events-none z-10"
+          >
             <img
               src="/images/profile-back.png"
               alt="Back Silhouette"
               className="h-[120%] sm:h-[135%] max-h-135 sm:max-h-170 scale-115 sm:scale-125 origin-top object-contain object-top drop-shadow-[0_12px_35px_rgba(0,0,0,0.9)] opacity-95"
             />
-          </div>
+          </motion.div>
 
           {/* Tagline Text - Typewriter Effect */}
           <div className="relative z-20 w-full text-center pb-6 sm:pb-10 pointer-events-none select-none">

@@ -5,8 +5,8 @@ export const skillsData = {
     {
       id: "frontend",
       title: "Front-End Development",
-      badge: "Expert",
-      badgeType: "expert",
+      badge: "Intermediate",
+      badgeType: "intermediate",
       description: "Menciptakan antarmuka pengguna yang intuitif, responsif, dan menarik menggunakan teknologi web modern.",
       tags: [
         { name: "HTML", icon: "html" },
@@ -22,8 +22,8 @@ export const skillsData = {
     {
       id: "backend",
       title: "Back-End Development",
-      badge: "Expert",
-      badgeType: "expert",
+      badge: "Intermediate",
+      badgeType: "intermediate",
       description: "Mengembangkan API dan arsitektur basis data yang tangguh, aman, dan skalabel.",
       tags: [
         { name: "JavaScript", icon: "javascript" },
@@ -53,38 +53,38 @@ export const skillsData = {
         { name: "Prototyping", icon: "prototype" }
       ]
     },
-/*
-    {
-      id: "pm",
-      title: "Project Management",
-      badge: "Intermediate",
-      badgeType: "intermediate",
-      description: "Merencanakan, mengorganisir, dan mengelola sumber daya untuk mencapai tujuan proyek secara efektif serta menghasilkan dampak yang nyata.",
-      tags: [
-        { name: "Scrum", icon: "scrum" },
-        { name: "Jira", icon: "jira" },
-        { name: "Confluence", icon: "confluence" },
-        { name: "Trello", icon: "trello" },
-        { name: "Miro", icon: "miro" }
-      ]
-    },
-    {
-      id: "devops",
-      title: "DevOps & Cloud",
-      badge: "Intermediate",
-      badgeType: "intermediate",
-      description: "Mengotomatisasi pipeline deployment, mengelola infrastruktur cloud, serta memastikan sistem yang andal dan skalabel.",
-      tags: [
-        { name: "Linux", icon: "linux" },
-        { name: "Docker", icon: "docker" },
-        { name: "Google Cloud", icon: "gcp" },
-        { name: "AWS", icon: "aws" },
-        { name: "Jenkins", icon: "jenkins" },
-        { name: "Github Action", icon: "githubactions" },
-        { name: "Nginx", icon: "nginx" }
-      ]
-    }
-*/
+    /*
+        {
+          id: "pm",
+          title: "Project Management",
+          badge: "Intermediate",
+          badgeType: "intermediate",
+          description: "Merencanakan, mengorganisir, dan mengelola sumber daya untuk mencapai tujuan proyek secara efektif serta menghasilkan dampak yang nyata.",
+          tags: [
+            { name: "Scrum", icon: "scrum" },
+            { name: "Jira", icon: "jira" },
+            { name: "Confluence", icon: "confluence" },
+            { name: "Trello", icon: "trello" },
+            { name: "Miro", icon: "miro" }
+          ]
+        },
+        {
+          id: "devops",
+          title: "DevOps & Cloud",
+          badge: "Intermediate",
+          badgeType: "intermediate",
+          description: "Mengotomatisasi pipeline deployment, mengelola infrastruktur cloud, serta memastikan sistem yang andal dan skalabel.",
+          tags: [
+            { name: "Linux", icon: "linux" },
+            { name: "Docker", icon: "docker" },
+            { name: "Google Cloud", icon: "gcp" },
+            { name: "AWS", icon: "aws" },
+            { name: "Jenkins", icon: "jenkins" },
+            { name: "Github Action", icon: "githubactions" },
+            { name: "Nginx", icon: "nginx" }
+          ]
+        }
+    */
   ]
 };
 
