@@ -103,11 +103,11 @@ export default function Navbar() {
           {/* Mobile Left: Hamburger + Logo */}
           <div className="flex items-center gap-3 md:hidden">
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              onClick={() => setMobileMenuOpen(true)}
               className="p-1.5 rounded-lg text-foreground hover:bg-accent transition-colors"
               aria-label="Toggle Navigation Menu"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              <Menu className="w-6 h-6" />
             </button>
 
             <Logo />
@@ -250,34 +250,48 @@ export default function Navbar() {
         <>
           {/* Backdrop Overlay */}
           <div
-            className="fixed inset-0 bg-black/60 backdrop-blur-xs z-40 md:hidden"
+            className="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 md:hidden animate-in fade-in duration-200"
             onClick={() => setMobileMenuOpen(false)}
           />
 
           {/* Left Drawer Panel */}
-          <aside className="fixed top-14 left-0 bottom-0 z-50 w-72 sm:w-80 bg-background border-r border-border p-4 flex flex-col justify-between md:hidden shadow-2xl animate-in slide-in-from-left duration-200">
-            {/* Nav Links */}
-            <div className="space-y-1.5 pt-2">
-              {navLinks.map((link) => {
-                const isActive = activeNav === link.href;
-                return (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => {
-                      setActiveNav(link.href);
-                      setMobileMenuOpen(false);
-                    }}
-                    className={`block px-4 py-3 rounded-xl text-sm font-semibold transition-all ${
-                      isActive
-                        ? 'bg-blue-600/15 text-blue-500 dark:bg-[#1a2b5e] dark:text-blue-400 font-bold'
-                        : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                    }`}
-                  >
-                    {link.name}
-                  </a>
-                );
-              })}
+          <aside className="fixed inset-y-0 left-0 z-[60] w-72 sm:w-80 bg-background border-r border-border p-5 flex flex-col justify-between md:hidden shadow-2xl animate-in slide-in-from-left duration-200">
+            <div className="space-y-6">
+              {/* Drawer Top Header: Logo + Close Button */}
+              <div className="flex items-center justify-between pb-4 border-b border-border/60">
+                <Logo />
+                <button
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="p-1.5 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
+                  aria-label="Close Navigation Menu"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              {/* Nav Links */}
+              <div className="space-y-1">
+                {navLinks.map((link) => {
+                  const isActive = activeNav === link.href;
+                  return (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => {
+                        setActiveNav(link.href);
+                        setMobileMenuOpen(false);
+                      }}
+                      className={`block px-4 py-3 rounded-xl text-sm font-semibold transition-all ${
+                        isActive
+                          ? 'bg-blue-600/15 text-blue-500 dark:bg-[#1a2b5e] dark:text-blue-400 font-bold'
+                          : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                      }`}
+                    >
+                      {link.name}
+                    </a>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Bottom Action: Unduh Resume */}
