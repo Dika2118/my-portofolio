@@ -4,6 +4,7 @@ import { MockupRenderer } from './SkillsMockups';
 import { useLanguage } from '../../i18n';
 import { Crown } from 'lucide-react';
 import { TechTagIcon } from '../ui/TechIcons';
+import { motion } from 'framer-motion';
 
 export default function Skills() {
   const { t } = useLanguage();
@@ -11,18 +12,30 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-background text-foreground transition-colors duration-300 overflow-hidden">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center space-y-4 mb-14">
+        {/* Section Header - Fade in from Left to Right on Scroll */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="text-left space-y-4 mb-14"
+        >
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white font-sans">
             {t('skills.title')}
           </h2>
-          <p className="text-gray-600 dark:text-neutral-400 text-sm md:text-base max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-600 dark:text-neutral-400 text-sm md:text-base max-w-2xl leading-relaxed">
             {t('skills.subtitle')}
           </p>
-        </div>
+        </motion.div>
 
-        {/* Cards Layout: Horizontal Scroll Peek on Mobile, Grid on Tablet/Desktop */}
-        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 -mx-4 px-4 sm:mx-0 sm:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 scrollbar-none [scroll-padding-left:1rem]">
+        {/* Cards Layout - Fade in from Bottom to Top on Scroll */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.15 }}
+          transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
+          className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-6 -mx-4 px-4 sm:mx-0 sm:px-0 md:pb-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 scrollbar-none [scroll-padding-left:1rem]"
+        >
           {skillsCategories.map((item) => {
             const categoryTitle = t(`skills.categories.${item.id}.title`);
             const categoryDesc = t(`skills.categories.${item.id}.description`);
@@ -80,7 +93,7 @@ export default function Skills() {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

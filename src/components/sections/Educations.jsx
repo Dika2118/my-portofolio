@@ -26,18 +26,30 @@ export default function Educations() {
   return (
     <section id="educations" className="py-20 bg-background text-foreground transition-colors duration-300 overflow-hidden">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-left space-y-4 mb-16">
+        {/* Section Header - Fade in from Left to Right on Scroll */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="text-left space-y-4 mb-16"
+        >
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white font-sans">
             {t('education.title') || 'Pendidikan'}
           </h2>
           <p className="text-muted-foreground text-sm sm:text-base max-w-2xl">
             {t('education.subtitle') || 'Latar belakang akademis dan pendidikan formal yang membentuk fondasi pengetahuan serta keahlian saya.'}
           </p>
-        </div>
+        </motion.div>
 
-        {/* Timeline Container */}
-        <div className="relative">
+        {/* Timeline Container - Fade in from Bottom to Top on Scroll */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.15 }}
+          transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
+          className="relative"
+        >
           {/* Central Stem Line */}
           <div className="absolute left-6 md:left-1/2 top-4 bottom-4 w-0.5 -translate-x-1/2 bg-gray-200 dark:bg-neutral-800/80 rounded-full" />
 
@@ -139,7 +151,7 @@ export default function Educations() {
               );
             })}
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

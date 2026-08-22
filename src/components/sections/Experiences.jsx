@@ -91,15 +91,27 @@ export default function Experiences() {
   return (
     <section id="experiences" className="py-20 bg-background text-foreground transition-colors duration-300 overflow-hidden">
       <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header - Left Aligned */}
-        <div className="text-left space-y-4 mb-10">
+        {/* Section Header - Left Aligned (Fade in from Left to Right on Scroll) */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: false, amount: 0.2 }}
+          transition={{ duration: 0.75, ease: [0.16, 1, 0.3, 1] }}
+          className="text-left space-y-4 mb-10"
+        >
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 dark:text-white font-sans">
             {t('experiences.title')}
           </h2>
-        </div>
+        </motion.div>
 
-        {/* Accordion Experience List */}
-        <div className="space-y-4">
+        {/* Accordion Experience List - Fade in from Bottom to Top on Scroll */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: false, amount: 0.15 }}
+          transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
+          className="space-y-4"
+        >
           {experiencesData.map((exp, idx) => {
             const getTrans = (key, fallback) => {
               const res = t(key);
@@ -222,7 +234,7 @@ export default function Experiences() {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
