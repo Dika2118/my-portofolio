@@ -185,7 +185,10 @@ export default function Navbar() {
           <div className="flex items-center gap-1.5 sm:gap-3">
             {/* Desktop Unduh Resume Button */}
             <a
-              href="#resume"
+              href="/images/CV.png"
+              download="CV_Dika_Wijaya.png"
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden md:flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-white text-black font-semibold text-xs hover:bg-gray-100 transition-all shadow-sm"
             >
               <span>{t('nav.downloadResume')}</span>
@@ -340,7 +343,10 @@ export default function Navbar() {
             {/* Bottom Action: Unduh Resume */}
             <div className="pt-4 border-t border-border/60">
               <a
-                href="#resume"
+                href="/images/CV.png"
+                download="CV_Dika_Wijaya.png"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setMobileMenuOpen(false)}
                 className="w-full flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-white text-black font-bold text-sm hover:bg-neutral-200 transition-all shadow-md"
               >
