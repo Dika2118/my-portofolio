@@ -7,6 +7,7 @@ import Projects from './components/sections/Projects';
 import Experiences from './components/sections/Experiences';
 import Educations from './components/sections/Educations';
 import Achievements from './components/sections/Achievements';
+import ScrollToTop from './components/ui/ScrollToTop';
 import './App.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Achievements />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
