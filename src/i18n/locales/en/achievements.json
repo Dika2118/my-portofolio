@@ -1,28 +1,27 @@
 {
-  "badge": "Awards",
-  "title": "Honors & Achievements",
-  "subtitle": "Official recognition for work results, competitions, and contributions in software development.",
+  "badge": "Achievements",
+  "title": "Achievements",
+  "subtitle": "Official certifications and professional training credentials earned.",
+  "viewAll": "View all achievements",
   "items": [
     {
       "id": 1,
-      "title": "1st Place National Web App Hackathon 2023",
-      "issuer": "Ministry of Communication and Information Technology",
-      "year": "2023",
-      "description": "Developed a real-time disaster management prototype powered by AI and React."
+      "title": "Vocational School Graduate Academy (VSGA)",
+      "issuer": "KOMDIGI",
+      "category": "Certification"
     },
     {
       "id": 2,
-      "title": "AWS Certified Solutions Architect",
-      "issuer": "Amazon Web Services (AWS)",
-      "year": "2022",
-      "description": "Official certification for designing cost-efficient, secure, and distributed cloud architecture."
+      "title": "AWS Academy Graduate - Cloud Foundations",
+      "issuer": "AWS",
+      "category": "Certification"
     },
     {
       "id": 3,
-      "title": "Best Contributor of the Year",
-      "issuer": "Tech Solutions Indonesia",
-      "year": "2023",
-      "description": "Internal award for dedication to modernizing the company’s primary frontend stack."
+      "title": "Computer Club Development & Training (CCDT)",
+      "issuer": "UKM Computer Club",
+      "category": "Training"
     }
   ]
 }
+
