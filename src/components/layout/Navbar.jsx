@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Download, Palette, Menu, X, Sun, Moon, Laptop } from 'lucide-react';
 import { useTheme } from '../../hooks/useTheme';
 import { useLanguage } from '../../i18n';
+import { motion } from 'framer-motion';
 
 function Logo() {
   return (
@@ -68,6 +69,43 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // IntersectionObserver to auto-update activeNav based on current section in view
+  useEffect(() => {
+    const sectionIds = ['hero', 'skills', 'projects', 'experiences', 'educations', 'achievements'];
+
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveNav(`#${entry.target.id}`);
+        }
+      });
+    };
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-30% 0px -40% 0px',
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sectionIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        observer.observe(element);
+      }
+    });
+
+    return () => {
+      sectionIds.forEach((id) => {
+        const element = document.getElementById(id);
+        if (element) {
+          observer.unobserve(element);
+        }
+      });
+    };
+  }, []);
+
   const languageOptions = [
     { code: 'en', label: 'Inggris', flag: FlagEN },
     { code: 'id', label: 'Indonesia', flag: FlagID },
@@ -123,13 +161,20 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setActiveNav(link.href)}
-                    className={`text-xs lg:text-sm font-medium transition-colors ${
+                    className={`relative py-1 text-xs lg:text-sm font-medium transition-colors ${
                       isActive
-                        ? 'text-primary font-semibold'
+                        ? 'text-foreground font-bold'
                         : 'text-muted-foreground hover:text-foreground'
                     }`}
                   >
                     {link.name}
+                    {isActive && (
+                      <motion.span
+                        layoutId="activeNavIndicator"
+                        className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-500 dark:bg-blue-400 rounded-full"
+                        transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                      />
+                    )}
                   </a>
                 );
               })}
@@ -279,9 +324,9 @@ export default function Navbar() {
                         setActiveNav(link.href);
                         setMobileMenuOpen(false);
                       }}
-                      className={`block px-4 py-3 rounded-xl text-sm font-semibold transition-all ${
+                      className={`relative flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold transition-all ${
                         isActive
-                          ? 'bg-blue-600/15 text-blue-500 dark:bg-[#1a2b5e] dark:text-blue-400 font-bold'
+                          ? 'bg-blue-600/15 text-blue-500 dark:bg-[#1a2b5e] dark:text-blue-400 font-bold border-l-4 border-blue-500'
                           : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
                       }`}
                     >
