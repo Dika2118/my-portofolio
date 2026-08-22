@@ -55,8 +55,8 @@ export default function Heros() {
   const [isBannerHovered, setIsBannerHovered] = useState(false);
 
   const stats = [
-    { label: t('hero.stats.experience'), value: "4+" },
-    { label: t('hero.stats.services'), value: "6" },
+    { label: t('hero.stats.experience'), value: "2" },
+    { label: t('hero.stats.services'), value: "3" },
     { label: t('hero.stats.projects'), value: "8" },
     { label: t('hero.stats.achievements'), value: "15" },
   ];

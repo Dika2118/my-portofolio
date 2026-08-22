@@ -1,7 +1,7 @@
 export const PERSONAL_INFO = {
   name: "I Putu Gede Dika Wijaya",
   role: "Web Developer",
-  bio: "UX Engineer dengan pengalaman 4+ tahun dalam front-end engineering dan design systems. Berfokus pada pembangunan UI library yang scalable dan mentranslasikan desain UI/UX menjadi kode berkualitas tinggi.",
+  bio: "Web Developer berlokasi di Bali yang berfokus membangun aplikasi web interaktif, responsif, dan berkinerja tinggi, mencakup pengembangan Front-End (React) hingga Back-End.",
   location: "Bali, Indonesia",
   email: "dikawijaya2121@gmail.com",
   phone: "+62 877-9410-8545",
