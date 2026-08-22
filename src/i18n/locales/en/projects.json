@@ -4,6 +4,8 @@
   "featured": "Featured",
   "liveDemo": "Live Demo",
   "code": "Code",
+  "viewAll": "View all projects",
+  "showLess": "Show less projects",
   "items": [
     {
       "id": 1,

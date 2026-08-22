@@ -4,6 +4,8 @@
   "featured": "Unggulan",
   "liveDemo": "Live Demo",
   "code": "Kode",
+  "viewAll": "Lihat semua proyek",
+  "showLess": "Sembunyikan proyek",
   "items": [
     {
       "id": 1,
