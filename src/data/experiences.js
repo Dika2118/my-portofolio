@@ -1,69 +1,52 @@
 export const experiencesData = [
   {
     id: 1,
-    role: "UX Engineer (Web & Android)",
-    company: "Blibli",
-    period: "Agu 2022 - Okt 2025",
-    location: "Jakarta, Indonesia",
-    type: "Penuh waktu",
-    typeEn: "Full-time",
-    logoType: "blibli",
+    role: "Web Developer",
+    company: "Sinar Teknologi Indonesia",
+    period: "Agu 2025 - Februari 2026",
+    location: "Bali, Indonesia",
+    type: "Magang",
+    typeEn: "Internship",
+    logoType: "STI",
     contributions: [
-      "Mempelopori **BLUE Android** dan mengembangkan **BLUE Web**, menciptakan pengalaman lintas platform yang mulus serta **berhasil meningkatkan kepuasan pengguna dalam mengurangi redundansi UI (8,48/10)** dan **mempercepat durasi pengembangan (8,42/10)**.",
-      "Merancang dan membangun **BLUE Docsite** dari nol sebagai PIC, mengintegrasikan CMS yang **memangkas waktu pembaruan konten hingga 90%** serta **meningkatkan Monthly Active Users (MAU)**.",
-      "Mengembangkan internal UX engineering tools seperti `Figma-to-Compose Code Generator` dan `UXE Icon Checker`, mengoptimalkan alur kerja desain-ke-kode serta **memastikan aset berkualitas tinggi yang siap digunakan di tahap produksi**.",
-      "Menjembatani komunikasi antara desainer, product manager, dan developer, hingga **mencapai skor feedback positif sebesar 91% dari para developer**.",
-      "Membimbing dan melatih **peserta magang** dalam proses slicing desain-ke-kode serta alur kerja pengembangan sistem desain."
+      "Mengembangkan dan memelihara berbagai aplikasi web dengan menangani pengembangan frontend dan backend untuk mendukung kebutuhan bisnis perusahaan.",
+      "Merancang serta mengimplementasikan REST API, logika bisnis, dan integrasi database guna memastikan sistem berjalan secara efisien dan andal.",
+      "Berkolaborasi dengan tim desain, developer, dan stakeholder untuk menerjemahkan kebutuhan pengguna menjadi solusi digital yang fungsional dan mudah digunakan.",
+      "Membangun antarmuka pengguna yang responsif serta mengoptimalkan performa aplikasi melalui perbaikan bug, refactoring kode, dan peningkatan kualitas sistem.",
+      "Berpartisipasi aktif dalam seluruh siklus pengembangan perangkat lunak, mulai dari analisis kebutuhan, pengembangan fitur, pengujian, hingga deployment dan pemeliharaan aplikasi."
     ],
     contributionsEn: [
-      "Pioneered **BLUE Android** and developed **BLUE Web**, creating seamless cross-platform experiences while **successfully increasing user satisfaction in reducing UI redundancy (8.48/10)** and **accelerating development duration (8.42/10)**.",
-      "Designed and built **BLUE Docsite** from scratch as PIC, integrating CMS which **slashed content update time by up to 90%** and **boosted Monthly Active Users (MAU)**.",
-      "Developed internal UX engineering tools such as `Figma-to-Compose Code Generator` and `UXE Icon Checker`, optimizing design-to-code workflows and **ensuring high-quality production-ready assets**.",
-      "Bridged communication between designers, product managers, and developers, achieving a **91% positive feedback score from developers**.",
-      "Mentored and trained **interns** in slicing design-to-code processes and design system workflows."
+      "Developed and maintained various web applications by handling both frontend and backend development to support the company's business needs.",
+      "Designed and implemented REST APIs, business logic, and database integrations to ensure efficient and reliable system operation.",
+      "Collaborated with design teams, developers, and stakeholders to translate user requirements into functional and user-friendly digital solutions.",
+      "Built responsive user interfaces and optimized application performance through bug fixes, code refactoring, and system quality improvements.",
+      "Participated in the software development lifecycle, from requirements analysis, feature development, testing, to deployment and maintenance."
     ],
     gallery: [
-      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=600&auto=format&fit=crop"
     ]
   },
   {
     id: 2,
-    role: "UX Engineer Intern",
-    company: "Blibli",
-    period: "Mar 2022 - Agu 2022",
-    location: "Jakarta, Indonesia",
+    role: "IT Support",
+    company: "KOMDIGI Kabupaten Badung",
+    period: "Januari 2022 - April 2022",
+    location: "Badung, Bali, Indonesia",
     type: "Magang",
     typeEn: "Internship",
-    logoType: "blibli",
+    logoType: "komdigi",
     contributions: [
-      "Berkolaborasi dengan tim UX Engineering dalam membangun dan menguji komponen UI untuk platform **Blibli Android** dan **Web**.",
-      "Mengembangkan dokumentasi komponen sistem desain dan membantu integrasi alur kerja desain-ke-kode."
+      "Memberikan dukungan teknis dan troubleshooting terhadap perangkat keras, perangkat lunak, serta jaringan komputer pada lingkungan kerja Pemerintah Kabupaten Badung.",
+      "Melakukan instalasi, konfigurasi, dan pemeliharaan komputer, printer, serta perangkat pendukung lainnya untuk memastikan kelancaran operasional pengguna.",
+      "Membantu kegiatan maintenance infrastruktur TI di area Pusat Pemerintahan (Puspem) Badung dan berbagai instansi pemerintah di wilayah Kabupaten Badung.",
+      "Melakukan pemeriksaan serta penanganan permasalahan jaringan dan perangkat komputer guna meminimalkan gangguan layanan dan downtime.",
+      "Berkolaborasi dengan tim IT Diskominfo dalam mendukung operasional harian, pemeliharaan sistem, dan penyelesaian kendala teknis di berbagai lokasi kerja."
     ],
     contributionsEn: [
-      "Collaborated with the UX Engineering team in building and testing UI components for **Blibli Android** and **Web** platforms.",
-      "Developed design system component documentation and assisted in design-to-code workflow integration."
-    ],
-    gallery: []
-  },
-  {
-    id: 3,
-    role: "Web Developer",
-    company: "PT Satya Kencana Pasundan",
-    period: "Apr 2021 - Mar 2022",
-    location: "Tasikmalaya, Indonesia",
-    type: "Penuh waktu",
-    typeEn: "Full-time",
-    logoType: "spi",
-    contributions: [
-      "Merancang dan mengembangkan aplikasi web internal dan sistem manajemen data perusahaan.",
-      "Mengoptimalkan performa situs dan antarmuka pengguna agar lebih intuitif dan responsif."
-    ],
-    contributionsEn: [
-      "Designed and developed internal web applications and company data management systems.",
-      "Optimized website performance and user interfaces to be more intuitive and responsive."
+      "Provided technical support and troubleshooting for hardware, software, and computer network issues within the Badung Regency Government office environment.",
+      "Performed installation, configuration, and maintenance of computers, printers, and other supporting devices to ensure smooth user operations.",
+      "Assisted in IT infrastructure maintenance activities in the Badung Government Center (Puspem) area and various government agencies across Badung Regency.",
+      "Conducted inspections and handled network and computer device problems to minimize service disruptions and downtime.",
+      "Collaborated with the Diskominfo IT team in supporting daily operations, system maintenance, and resolving technical issues at various work locations."
     ],
     gallery: []
   }

@@ -6,41 +6,32 @@
   "items": [
     {
       "id": 1,
-      "role": "UX Engineer (Web & Android)",
-      "company": "Blibli",
-      "period": "Agu 2022 - Okt 2025",
-      "location": "Jakarta, Indonesia",
-      "type": "Penuh waktu",
+      "role": "Web Developer",
+      "company": "Sinar Teknologi Indonesia",
+      "period": "Agu 2025 - Februari 2026",
+      "location": "Bali, Indonesia",
+      "type": "Magang",
       "contributions": [
-        "Mempelopori **BLUE Android** dan mengembangkan **BLUE Web**, menciptakan pengalaman lintas platform yang mulus serta **berhasil meningkatkan kepuasan pengguna dalam mengurangi redundansi UI (8,48/10)** dan **mempercepat durasi pengembangan (8,42/10)**.",
-        "Merancang dan membangun **BLUE Docsite** dari nol sebagai PIC, mengintegrasikan CMS yang **memangkas waktu pembaruan konten hingga 90%** serta **meningkatkan Monthly Active Users (MAU)**.",
-        "Mengembangkan internal UX engineering tools seperti `Figma-to-Compose Code Generator` dan `UXE Icon Checker`, mengoptimalkan alur kerja desain-ke-kode serta **memastikan aset berkualitas tinggi yang siap digunakan di tahap produksi**.",
-        "Menjembatani komunikasi antara desainer, product manager, dan developer, hingga **mencapai skor feedback positif sebesar 91% dari para developer**.",
-        "Membimbing dan melatih **peserta magang** dalam proses slicing desain-ke-kode serta alur kerja pengembangan sistem desain."
+        "Mengembangkan dan memelihara berbagai aplikasi web dengan menangani pengembangan frontend dan backend untuk mendukung kebutuhan bisnis perusahaan.",
+        "Merancang serta mengimplementasikan REST API, logika bisnis, dan integrasi database guna memastikan sistem berjalan secara efisien dan andal.",
+        "Berkolaborasi dengan tim desain, developer, dan stakeholder untuk menerjemahkan kebutuhan pengguna menjadi solusi digital yang fungsional dan mudah digunakan.",
+        "Membangun antarmuka pengguna yang responsif serta mengoptimalkan performa aplikasi melalui perbaikan bug, refactoring kode, dan peningkatan kualitas sistem.",
+        "Berpartisipasi aktif dalam seluruh siklus pengembangan perangkat lunak, mulai dari analisis kebutuhan, pengembangan fitur, pengujian, hingga deployment dan pemeliharaan aplikasi."
       ]
     },
     {
       "id": 2,
-      "role": "UX Engineer Intern",
-      "company": "Blibli",
-      "period": "Mar 2022 - Agu 2022",
-      "location": "Jakarta, Indonesia",
+      "role": "IT Support",
+      "company": "DISKOMINFO Kabupaten Badung",
+      "period": "Januari 2022 - April 2022",
+      "location": "Badung, Bali, Indonesia",
       "type": "Magang",
       "contributions": [
-        "Berkolaborasi dengan tim UX Engineering dalam membangun dan menguji komponen UI untuk platform **Blibli Android** dan **Web**.",
-        "Mengembangkan dokumentasi komponen sistem desain dan membantu integrasi alur kerja desain-ke-kode."
-      ]
-    },
-    {
-      "id": 3,
-      "role": "Web Developer",
-      "company": "PT Satya Kencana Pasundan",
-      "period": "Apr 2021 - Mar 2022",
-      "location": "Tasikmalaya, Indonesia",
-      "type": "Penuh waktu",
-      "contributions": [
-        "Merancang dan mengembangkan aplikasi web internal dan sistem manajemen data perusahaan.",
-        "Mengoptimalkan performa situs dan antarmuka pengguna agar lebih intuitif dan responsif."
+        "Memberikan dukungan teknis dan troubleshooting terhadap perangkat keras, perangkat lunak, serta jaringan komputer pada lingkungan kerja Pemerintah Kabupaten Badung.",
+        "Melakukan instalasi, konfigurasi, dan pemeliharaan komputer, printer, serta perangkat pendukung lainnya untuk memastikan kelancaran operasional pengguna.",
+        "Membantu kegiatan maintenance infrastruktur TI di area Pusat Pemerintahan (Puspem) Badung dan berbagai instansi pemerintah di wilayah Kabupaten Badung.",
+        "Melakukan pemeriksaan serta penanganan permasalahan jaringan dan perangkat komputer guna meminimalkan gangguan layanan dan downtime.",
+        "Berkolaborasi dengan tim IT Diskominfo dalam mendukung operasional harian, pemeliharaan sistem, dan penyelesaian kendala teknis di berbagai lokasi kerja."
       ]
     }
   ]

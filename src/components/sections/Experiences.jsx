@@ -36,6 +36,20 @@ function FormattedText({ text }) {
 }
 
 function CompanyLogo({ logoType, company }) {
+  if (logoType === 'STI' || logoType === 'sintek' || logoType === 'logosintek') {
+    return (
+      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 flex items-center justify-center shrink-0 shadow-md p-1.5 overflow-hidden">
+        <img src="/images/logosintek.png" alt={company || 'Sintek'} className="w-full h-full object-contain rounded-full" />
+      </div>
+    );
+  }
+  if (logoType === 'diskominfo' || logoType === 'komdigi' || logoType === 'logokomdigi') {
+    return (
+      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 flex items-center justify-center shrink-0 shadow-md p-1.5 overflow-hidden">
+        <img src="/images/logokomdigi.png" alt={company || 'KOMDIGI'} className="w-full h-full object-contain rounded-full" />
+      </div>
+    );
+  }
   if (logoType === 'blibli') {
     return (
       <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-neutral-900 border border-neutral-800 flex items-center justify-center shrink-0 shadow-md">
@@ -52,9 +66,16 @@ function CompanyLogo({ logoType, company }) {
       </div>
     );
   }
+  if (typeof logoType === 'string' && (logoType.startsWith('/') || logoType.startsWith('http'))) {
+    return (
+      <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white dark:bg-neutral-900 border border-gray-200 dark:border-neutral-800 flex items-center justify-center shrink-0 shadow-md p-1.5 overflow-hidden">
+        <img src={logoType} alt={company} className="w-full h-full object-contain rounded-full" />
+      </div>
+    );
+  }
   return (
     <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-neutral-800 border border-neutral-700 flex items-center justify-center shrink-0 text-white font-bold">
-      {company.charAt(0)}
+      {company ? company.charAt(0) : 'E'}
     </div>
   );
 }
@@ -80,12 +101,18 @@ export default function Experiences() {
         {/* Accordion Experience List */}
         <div className="space-y-4">
           {experiencesData.map((exp, idx) => {
-            const role = t(`experiences.items.${idx}.role`) || exp.role;
-            const company = t(`experiences.items.${idx}.company`) || exp.company;
-            const period = t(`experiences.items.${idx}.period`) || exp.period;
-            const location = t(`experiences.items.${idx}.location`) || exp.location;
-            const workType = language === 'en' ? (exp.typeEn || exp.type) : (t(`experiences.items.${idx}.type`) || exp.type);
-            const contributions = t(`experiences.items.${idx}.contributions`) || (language === 'en' ? exp.contributionsEn : exp.contributions);
+            const getTrans = (key, fallback) => {
+              const res = t(key);
+              return (res && typeof res === 'string' && !res.startsWith('experiences.items.')) ? res : fallback;
+            };
+
+            const role = getTrans(`experiences.items.${idx}.role`, exp.role);
+            const company = getTrans(`experiences.items.${idx}.company`, exp.company);
+            const period = getTrans(`experiences.items.${idx}.period`, exp.period);
+            const location = getTrans(`experiences.items.${idx}.location`, exp.location);
+            const workType = language === 'en' ? (exp.typeEn || exp.type) : getTrans(`experiences.items.${idx}.type`, exp.type);
+            const rawContributions = t(`experiences.items.${idx}.contributions`);
+            const contributions = Array.isArray(rawContributions) ? rawContributions : (language === 'en' ? exp.contributionsEn : exp.contributions);
 
             const isOpen = openId === exp.id;
 
@@ -130,9 +157,8 @@ export default function Experiences() {
 
                   <div className="p-1 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-800 transition-colors shrink-0">
                     <ChevronDown
-                      className={`w-5 h-5 text-neutral-400 transition-transform duration-300 ${
-                        isOpen ? 'rotate-180 text-gray-900 dark:text-white' : ''
-                      }`}
+                      className={`w-5 h-5 text-neutral-400 transition-transform duration-300 ${isOpen ? 'rotate-180 text-gray-900 dark:text-white' : ''
+                        }`}
                     />
                   </div>
                 </div>
