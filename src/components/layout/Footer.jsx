@@ -2,6 +2,7 @@ import React from 'react';
 import { PERSONAL_INFO } from '../../lib/constants';
 import { GithubIcon, LinkedinIcon } from '../ui/icons';
 import { useLanguage } from '../../i18n';
+import { MessageCircle } from 'lucide-react';
 
 function CodeIcon(props) {
   return (
@@ -70,8 +71,9 @@ export default function Footer() {
           href={waUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-6 py-3 rounded-xl bg-primary text-primary-foreground font-extrabold text-xs sm:text-sm hover:opacity-90 transition-all shadow-md active:scale-95 inline-flex items-center justify-center gap-2 mt-1"
+          className="px-6 py-3 rounded-full bg-primary text-primary-foreground font-extrabold text-xs sm:text-sm hover:opacity-90 transition-all shadow-md active:scale-95 inline-flex items-center justify-center gap-2.5 mt-1"
         >
+          <MessageCircle className="w-5 h-5 shrink-0" />
           <span>{t('footer.contactMe') || 'Hubungi saya'}</span>
         </a>
 
