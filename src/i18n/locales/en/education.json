@@ -1,25 +1,44 @@
 {
-  "title": "Education & Certifications",
-  "subtitle": "Academic background and formal training shaping my knowledge foundation.",
+  "title": "Education",
+  "subtitle": "Academic background and formal education shaping my knowledge foundation and technical skills.",
   "achievementsHeading": "Achievements",
   "items": [
     {
       "id": 1,
-      "degree": "Bachelor of Computer Science (S.Kom) - Informatics",
-      "institution": "University of Indonesia",
-      "period": "2017 - 2021",
-      "description": "Graduated with Cum Laude honors. Focused on Software Engineering and Web Development.",
-      "achievements": [
-        "GPA: 3.85 / 4.00",
-        "1st Place National Web App Competition (2020)"
-      ]
+      "level": "Elementary School",
+      "degree": "SD Negeri 2 Kaba-Kaba",
+      "institution": "Elementary School (SD)",
+      "period": "2011 - 2017",
+      "status": "Graduated",
+      "description": "Primary education establishing core academic fundamentals, character, discipline, and early interest in science."
     },
     {
       "id": 2,
-      "degree": "Intensive Full Stack Web Development",
-      "institution": "Hacktiv8 Bootcamp",
-      "period": "2021",
-      "description": "Intensive 16-week program covering modern JavaScript ecosystem, React, Node.js, and cloud deployment."
+      "level": "Junior High School",
+      "degree": "SMP Negeri 4 Kediri",
+      "institution": "Junior High School (SMP)",
+      "period": "2017 - 2020",
+      "status": "Graduated",
+      "description": "Junior high education focusing on mathematical logic, basic natural sciences, and introductory information technology."
+    },
+    {
+      "id": 3,
+      "level": "Vocational High School",
+      "degree": "SMK TI Bali Global Badung",
+      "institution": "Vocational High School / Computer & Network Engineering (TKJ)",
+      "period": "2020 - 2023",
+      "status": "Graduated",
+      "description": "Vocational IT education specializing in Computer & Network Engineering (TKJ), network infrastructure, hardware configuration, operating systems, and IT fundamentals."
+    },
+    {
+      "id": 4,
+      "level": "Higher Education",
+      "degree": "Politeknik Negeri Bali",
+      "institution": "Department of Information Technology – Informatics Management",
+      "period": "2023 - Present",
+      "status": "In Progress",
+      "description": "Focusing on software development, database management systems, web engineering, and modern application development."
     }
   ]
 }
+
