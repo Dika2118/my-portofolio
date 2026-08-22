@@ -1,0 +1,6 @@
+# Allow search engine crawlers to index all pages
+User-agent: *
+Allow: /
+
+# Sitemap link (Ganti URL ini dengan domain utama web Anda)
+Sitemap: https://dikawijaya-portfolio.vercel.app/sitemap.xml
