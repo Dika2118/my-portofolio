@@ -86,8 +86,6 @@ export default function Navbar() {
     { name: t('nav.experiences'), href: '#experiences' },
     { name: t('nav.education'), href: '#educations' },
     { name: t('nav.achievements'), href: '#achievements' },
-    { name: t('nav.testimonials'), href: '#testimonials' },
-    { name: t('nav.contact'), href: '#contact' },
   ];
 
   return (
