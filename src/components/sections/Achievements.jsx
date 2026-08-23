@@ -112,23 +112,6 @@ export default function Achievements() {
                     </div>
                   </div>
 
-                  {/* Reaction / Action Button on right */}
-                  <div className="flex items-center gap-1.5 shrink-0">
-                    {item.reactionType === 'fire' ? (
-                      <div className="flex items-center gap-1 px-2.5 py-1 rounded-full bg-gray-100 dark:bg-neutral-800/80 text-xs font-semibold text-gray-800 dark:text-neutral-200 border border-gray-200 dark:border-neutral-700/60 shadow-xs">
-                        <Flame className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
-                        <span>{item.reactions || 1}</span>
-                        <Plus className="w-3 h-3 text-neutral-400 ml-0.5" />
-                      </div>
-                    ) : (
-                      <button
-                        className="p-1.5 rounded-full text-neutral-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-neutral-800 transition-colors"
-                        aria-label="Add reaction"
-                      >
-                        <Plus className="w-4 h-4" />
-                      </button>
-                    )}
-                  </div>
                 </div>
               </motion.div>
             );
