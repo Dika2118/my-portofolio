@@ -58,7 +58,7 @@ export default function Heros() {
     { label: t('hero.stats.experience'), value: "2" },
     { label: t('hero.stats.services'), value: "3" },
     { label: t('hero.stats.projects'), value: "8" },
-    { label: t('hero.stats.achievements'), value: "15" },
+    { label: t('hero.stats.achievements'), value: "2" },
   ];
 
   return (

@@ -6,9 +6,9 @@ export const PERSONAL_INFO = {
   email: "dikawijaya2121@gmail.com",
   phone: "+62 877-9410-8545",
   social: {
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
-    instagram: "https://instagram.com",
+    github: "https://github.com/Dika2118",
+    linkedin: "https://www.linkedin.com/in/dika-wijaya-291a20318?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    instagram: "https://www.instagram.com/dika.wijaya21?igsi=aWoxc2hpY2lpaWxz",
   },
   stats: [
     { label: "Pengalaman", value: "4+" },

@@ -114,14 +114,6 @@ export default function Projects() {
                         >
                           <ExternalLink className="w-4 h-4" /> {t('projects.liveDemo')}
                         </a>
-                        <a
-                          href={project.githubUrl}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-600 dark:text-neutral-400 hover:text-gray-900 dark:hover:text-white transition-colors"
-                        >
-                          <GithubIcon className="w-4 h-4" /> {t('projects.code')}
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -144,9 +136,8 @@ export default function Projects() {
                   : (t('projects.viewAll') || 'Lihat semua proyek')}
               </span>
               <ArrowRight
-                className={`w-4 h-4 text-neutral-400 transition-transform duration-300 ${
-                  showAll ? '-rotate-90 text-blue-500' : 'group-hover:translate-x-1'
-                }`}
+                className={`w-4 h-4 text-neutral-400 transition-transform duration-300 ${showAll ? '-rotate-90 text-blue-500' : 'group-hover:translate-x-1'
+                  }`}
               />
             </button>
           </div>
