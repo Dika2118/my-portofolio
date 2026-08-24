@@ -109,15 +109,8 @@ export default function Footer() {
         </div>
 
         {/* Footer Bottom Bar - Compact Height */}
-        <div className="w-full border-t border-border pt-5 mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted-foreground">
+        <div className="w-full border-t border-border pt-5 mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center gap-3 text-xs text-muted-foreground">
           <p>© {new Date().getFullYear()} {PERSONAL_INFO.name}. {t('footer.rights') || 'Hak cipta dilindungi.'}</p>
-
-          <div className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground font-medium">
-            <a href="#changelog" className="hover:text-foreground transition-colors">{t('footer.changelog') || 'Changelog'}</a>
-            <a href="#gear" className="hover:text-foreground transition-colors">{t('footer.gear') || 'Gear & Setup'}</a>
-            <a href="#inspiration" className="hover:text-foreground transition-colors">{t('footer.inspiration') || 'Inspirasi Website'}</a>
-            <a href="#privacy" className="hover:text-foreground transition-colors">{t('footer.privacy') || 'Kebijakan Privasi'}</a>
-          </div>
         </div>
       </div>
     </footer>
