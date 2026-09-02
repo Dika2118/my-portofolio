@@ -129,11 +129,10 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
-          scrolled
-            ? 'bg-background/90 backdrop-blur-md border-border shadow-md py-3'
-            : 'bg-background/80 backdrop-blur-sm py-4 border-border/80'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${scrolled
+          ? 'bg-background/90 backdrop-blur-md border-border shadow-md py-3'
+          : 'bg-background/80 backdrop-blur-sm py-4 border-border/80'
+          }`}
       >
         <div className="w-full max-w-7xl mx-auto px-4 flex items-center justify-between">
           {/* Mobile Left: Hamburger + Logo */}
@@ -161,17 +160,16 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     onClick={() => setActiveNav(link.href)}
-                    className={`relative py-1 text-xs lg:text-sm font-medium transition-colors ${
-                      isActive
-                        ? 'text-foreground font-bold'
-                        : 'text-muted-foreground hover:text-foreground'
-                    }`}
+                    className={`relative py-1 text-xs lg:text-sm font-medium transition-colors ${isActive
+                      ? 'text-foreground font-bold'
+                      : 'text-muted-foreground hover:text-foreground'
+                      }`}
                   >
                     {link.name}
                     {isActive && (
                       <motion.span
                         layoutId="activeNavIndicator"
-                        className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-500 dark:bg-blue-400 rounded-full"
+                        className="absolute left-0 right-0 bottom-0 h-0.5 bg-nav-active rounded-full"
                         transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                       />
                     )}
@@ -229,11 +227,10 @@ export default function Navbar() {
                             changeLanguage(option.code);
                             setLangDropdownOpen(false);
                           }}
-                          className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all ${
-                            isActive
-                              ? 'bg-accent/80 text-foreground font-bold shadow-xs'
-                              : 'text-muted-foreground hover:bg-muted hover:text-foreground'
-                          }`}
+                          className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-xl text-xs sm:text-sm font-medium transition-all ${isActive
+                            ? 'bg-accent/80 text-foreground font-bold shadow-xs'
+                            : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                            }`}
                         >
                           <FlagIcon className="w-5 h-5" />
                           <span>{option.label}</span>
@@ -272,11 +269,10 @@ export default function Navbar() {
                             setTheme(opt.value);
                             setThemeDropdownOpen(false);
                           }}
-                          className={`w-full flex items-center gap-2.5 px-3 py-2 text-xs font-medium transition-colors ${
-                            isActive
-                              ? 'bg-primary/10 text-primary font-semibold'
-                              : 'text-foreground hover:bg-muted'
-                          }`}
+                          className={`w-full flex items-center gap-2.5 px-3 py-2 text-xs font-medium transition-colors ${isActive
+                            ? 'bg-primary/10 text-primary font-semibold'
+                            : 'text-foreground hover:bg-muted'
+                            }`}
                         >
                           <Icon className={`w-4 h-4 ${isActive ? 'text-primary' : 'text-muted-foreground'}`} />
                           <span>{opt.label}</span>
@@ -301,7 +297,7 @@ export default function Navbar() {
           />
 
           {/* Left Drawer Panel */}
-          <aside className="fixed inset-y-0 left-0 z-[60] w-72 sm:w-80 bg-background border-r border-border p-5 flex flex-col justify-between md:hidden shadow-2xl animate-in slide-in-from-left duration-200">
+          <aside className="fixed inset-y-0 left-0 z-60 w-72 sm:w-80 bg-background border-r border-border p-5 flex flex-col justify-between md:hidden shadow-2xl animate-in slide-in-from-left duration-200">
             <div className="space-y-6">
               {/* Drawer Top Header: Logo + Close Button */}
               <div className="flex items-center justify-between pb-4 border-b border-border/60">
@@ -327,11 +323,10 @@ export default function Navbar() {
                         setActiveNav(link.href);
                         setMobileMenuOpen(false);
                       }}
-                      className={`relative flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold transition-all ${
-                        isActive
-                          ? 'bg-blue-600/15 text-blue-500 dark:bg-[#1a2b5e] dark:text-blue-400 font-bold border-l-4 border-blue-500'
-                          : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
-                      }`}
+                      className={`relative flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold transition-all ${isActive
+                        ? 'bg-blue-600/15 text-blue-500 dark:bg-[#1a2b5e] dark:text-blue-400 font-bold border-l-4 border-blue-500'
+                        : 'text-muted-foreground hover:text-foreground hover:bg-muted/50'
+                        }`}
                     >
                       {link.name}
                     </a>

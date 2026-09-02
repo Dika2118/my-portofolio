@@ -201,4 +201,13 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
+  /* Active navigation line color helper */
+  .bg-nav-active {
+    background-color: var(--color-blue-500, #3b82f6);
+  }
+
+  .dark .bg-nav-active {
+    background-color: var(--color-blue-400, #60a5fa);
+  }
 }

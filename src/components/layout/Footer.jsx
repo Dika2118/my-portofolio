@@ -55,7 +55,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-background text-foreground transition-colors duration-300 pt-12 sm:pt-16 pb-6 sm:pb-8 border-t border-border">
-      <div className="w-full max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 font-sans flex flex-col items-center text-center space-y-5 sm:space-y-6">
+      <div className="w-full max-w-350 mx-auto px-4 sm:px-6 lg:px-8 font-sans flex flex-col items-center text-center space-y-5 sm:space-y-6">
         {/* Project Prompt Subtitle */}
         <p className="text-muted-foreground text-sm sm:text-base font-medium">
           {t('footer.projectPrompt') || 'Punya ide proyek?'}
