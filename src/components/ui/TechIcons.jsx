@@ -226,7 +226,8 @@ export const techIconMap = {
   more: Plus
 };
 
-export function TechTagIcon({ iconKey, className = "w-3.5 h-3.5 text-gray-500 dark:text-neutral-400" }) {
+export function TechTagIcon({ iconKey, className = "w-3.5 h-3.5 text-muted-foreground" }) {
+  if (!iconKey) return null;
   const IconComponent = techIconMap[iconKey] || Code;
   return <IconComponent className={className} />;
 }

@@ -29,7 +29,7 @@ export const skillsData = {
         { name: "TypeScript", icon: "typescript" },
         { name: "PHP", icon: "php" },
         { name: "Laravel", icon: "laravel" },
-        { name: "MySQL", icon: "mysql" }
+        { name: "MySQL" }
       ]
     },
 

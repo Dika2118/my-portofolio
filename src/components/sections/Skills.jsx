@@ -84,7 +84,9 @@ export default function Skills() {
                         key={idx}
                         className="bg-gray-100 dark:bg-[#181d28] border border-gray-200 dark:border-[#263044] text-gray-800 dark:text-neutral-300 text-xs px-2.5 py-1.5 rounded-lg flex items-center gap-1.5 cursor-default transition-colors hover:border-gray-300 dark:hover:border-[#384660]"
                       >
-                        <TechTagIcon iconKey={tag.icon} className="w-3.5 h-3.5 shrink-0 text-gray-700 dark:text-neutral-300" />
+                        {tag.icon && (
+                          <TechTagIcon iconKey={tag.icon} className="w-3.5 h-3.5 shrink-0 text-gray-700 dark:text-neutral-300" />
+                        )}
                         <span className="font-medium text-[11px] text-gray-800 dark:text-neutral-300">{tag.name}</span>
                       </div>
                     ))}
