@@ -9,12 +9,12 @@ function Logo() {
     <a href="#hero" className="group flex items-center gap-2">
       <img
         src="/images/logo-dark.png"
-        alt="AR Logo"
+        alt="TD Logo"
         className="h-8 w-auto dark:hidden object-contain"
       />
       <img
         src="/images/logo-light.png"
-        alt="AR Logo"
+        alt="TD Logo"
         className="h-8 w-auto hidden dark:block object-contain"
       />
     </a>
