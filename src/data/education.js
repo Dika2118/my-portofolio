@@ -36,10 +36,10 @@ export const educationData = [
     id: 4,
     level: "Perguruan Tinggi",
     degree: "Politeknik Negeri Bali",
-    institution: "Jurusan Teknologi Informasi – Program Studi Manajemen Informatika",
-    period: "2023 - Sekarang",
-    status: "Sedang Berjalan",
-    isOngoing: true,
+    institution: "Jurusan Teknologi Informasi – Program Studi D3 Manajemen Informatika IPK :3,82",
+    period: "2023 - 2026",
+    status: "Lulus",
+    isOngoing: false,
     iconType: "college",
     description: "Fokus pada pengembangan perangkat lunak, manajemen basis data, rekayasa web, dan pemrograman aplikasi."
   }
