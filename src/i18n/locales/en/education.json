@@ -4,24 +4,6 @@
   "achievementsHeading": "Achievements",
   "items": [
     {
-      "id": 1,
-      "level": "Elementary School",
-      "degree": "SD Negeri 2 Kaba-Kaba",
-      "institution": "Elementary School (SD)",
-      "period": "2011 - 2017",
-      "status": "Graduated",
-      "description": "Primary education establishing core academic fundamentals, character, discipline, and early interest in science."
-    },
-    {
-      "id": 2,
-      "level": "Junior High School",
-      "degree": "SMP Negeri 4 Kediri",
-      "institution": "Junior High School (SMP)",
-      "period": "2017 - 2020",
-      "status": "Graduated",
-      "description": "Junior high education focusing on mathematical logic, basic natural sciences, and introductory information technology."
-    },
-    {
       "id": 3,
       "level": "Vocational High School",
       "degree": "SMK TI Bali Global Badung",
@@ -34,7 +16,7 @@
       "id": 4,
       "level": "Higher Education",
       "degree": "Politeknik Negeri Bali",
-      "institution": "Department of Information Technology – D3 Informatics Management GPA: 3.82",
+      "institution": "Department of Information Technology – D3 Informatics Management GPA: 3.91",
       "period": "2023 - 2026",
       "status": "Graduated ",
       "description": "Focusing on software development, database management systems, web engineering, and modern application development."

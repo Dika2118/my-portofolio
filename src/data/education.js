@@ -1,26 +1,26 @@
 export const educationData = [
-  {
-    id: 1,
-    level: "Sekolah Dasar",
-    degree: "SD Negeri 2 Kaba-Kaba",
-    institution: "Sekolah Dasar (SD)",
-    period: "2011 - 2017",
-    status: "Lulus",
-    isOngoing: false,
-    iconType: "school",
-    description: "Pendidikan dasar yang membangun fondasi akademis, karakter, disiplin, dan minat awal pada ilmu pengetahuan."
-  },
-  {
-    id: 2,
-    level: "Sekolah Menengah Pertama",
-    degree: "SMP Negeri 4 Kediri",
-    institution: "SMP / Sederajat",
-    period: "2017 - 2020",
-    status: "Lulus",
-    isOngoing: false,
-    iconType: "book",
-    description: "Pendidikan menengah pertama dengan fokus pada pengembangan logika matematika, sains dasar, dan pengenalan dunia teknologi informasi."
-  },
+  // {
+  //   id: 1,
+  //   level: "Sekolah Dasar",
+  //   degree: "SD Negeri 2 Kaba-Kaba",
+  //   institution: "Sekolah Dasar (SD)",
+  //   period: "2011 - 2017",
+  //   status: "Lulus",
+  //   isOngoing: false,
+  //   iconType: "school",
+  //   description: "Pendidikan dasar yang membangun fondasi akademis, karakter, disiplin, dan minat awal pada ilmu pengetahuan."
+  // },
+  // {
+  //   id: 2,
+  //   level: "Sekolah Menengah Pertama",
+  //   degree: "SMP Negeri 4 Kediri",
+  //   institution: "SMP / Sederajat",
+  //   period: "2017 - 2020",
+  //   status: "Lulus",
+  //   isOngoing: false,
+  //   iconType: "book",
+  //   description: "Pendidikan menengah pertama dengan fokus pada pengembangan logika matematika, sains dasar, dan pengenalan dunia teknologi informasi."
+  // },
   {
     id: 3,
     level: "Sekolah Menengah Kejuruan",
@@ -36,7 +36,7 @@ export const educationData = [
     id: 4,
     level: "Perguruan Tinggi",
     degree: "Politeknik Negeri Bali",
-    institution: "Jurusan Teknologi Informasi – Program Studi D3 Manajemen Informatika IPK :3,82",
+    institution: "Jurusan Teknologi Informasi – Program Studi D3 Manajemen Informatika IPK :3.91",
     period: "2023 - 2026",
     status: "Lulus",
     isOngoing: false,
